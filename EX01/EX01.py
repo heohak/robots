@@ -50,7 +50,7 @@ class Robot:
 
 def main():
     """
-    Initilize main function.
+    Initilize main function..
 
     Create a Robot class object and run it.
     """
