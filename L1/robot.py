@@ -74,6 +74,7 @@ class Robot:
         """Make main spin loop."""
         while not self.shutdown:
             self.sense()
+            self.get_line_direction()
             self.act()
             timestamp = self.robot.get_time()
             print(f'timestamp is {timestamp}')
