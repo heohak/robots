@@ -65,11 +65,6 @@ class Robot:
             self.robot.set_right_wheel_speed(-10)
 
 
-
-
-
-
-
     def spin(self):
         """Make main spin loop."""
         while not self.shutdown:
@@ -79,7 +74,5 @@ class Robot:
             timestamp = self.robot.get_time()
             print(f'timestamp is {timestamp}')
             self.robot.sleep(0.05)
-            if self.robot.get_time() > 20:
-                self.shutdown = True
 
 
