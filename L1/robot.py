@@ -107,7 +107,7 @@ class Robot:
 
 
 def main():
-    """Initialize main."""
+    """Initialize main method."""
     robot = Robot()
     robot.spin()
 
