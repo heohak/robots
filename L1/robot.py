@@ -54,12 +54,31 @@ class Robot:
         else:
             return self.value
 
+    def act(self):
+        if self.get_line_direction() == 0:
+            self.robot.set_wheels_speed(10)
+        elif self.get_line_direction() == 1:
+            self.robot.set_left_wheel_speed(-10)
+            self.robot.set_right_wheel_speed(10)
+        elif self.get_line_direction() == -1:
+            self.robot.set_left_wheel_speed(10)
+            self.robot.set_right_wheel_speed(-10)
+
+
+
+
+
+
+
     def spin(self):
         """Make main spin loop."""
         while not self.shutdown:
             self.sense()
+            self.act()
             timestamp = self.robot.get_time()
             print(f'timestamp is {timestamp}')
             self.robot.sleep(0.05)
             if self.robot.get_time() > 20:
                 self.shutdown = True
+
+
