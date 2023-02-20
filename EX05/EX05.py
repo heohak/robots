@@ -19,9 +19,6 @@ class Robot:
         """Read values."""
         front_laser = self.robot.get_front_middle_laser()
         self.values.append(front_laser)
-        first_median = statistics.median(self.values)
-        self.values.remove(front_laser)
-        self.values.append(first_median)
         if len(self.values) == 6:
             self.values.remove(self.values[0])
 
