@@ -58,7 +58,7 @@ class Robot:
             self.turnaround = -1
             print("Value is " + str(self.last_value))
             return -1
-        elif tof_values == [False, True, True, True, True, False]:
+        elif tof_values == [True, True, True, True, True, True]:
             if self.random_count == 1:
                 self.last_value = 1
                 self.random_count = self.random_count + 1
