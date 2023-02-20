@@ -45,7 +45,7 @@ class Robot:
 
 
 def main():
-    """ Initialize main entry point."""
+    """Initialize main entry point."""
     robot = Robot()
     robot.spin()
 
