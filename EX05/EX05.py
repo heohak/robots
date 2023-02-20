@@ -2,6 +2,7 @@
 import PiBot
 import statistics
 
+
 class Robot:
     """Robot class."""
 
@@ -22,7 +23,6 @@ class Robot:
         if len(self.values) == 6:
             self.values.remove(self.values[0])
 
-
     def get_front_middle_laser(self) -> float:
         """
         Return the filtered value.
@@ -36,7 +36,7 @@ class Robot:
         # Your code here...
 
     def spin(self):
-        """The spin loop."""
+        """Initialize spin loop."""
         while not self.shutdown:
             print(f'Value is {self.get_front_middle_laser()}')
             self.robot.sleep(0.05)
@@ -45,22 +45,10 @@ class Robot:
 
 
 def main():
-    """The main entry point."""
+    """Main entry point."""
     robot = Robot()
     robot.spin()
 
 
 if __name__ == "__main__":
     main()
-
-def test():
-    robot = Robot()
-    import dataset1 # or any other data file
-    data = dataset1.get_data()
-    robot.robot.load_data_profile(data)
-    for i in range(len(data)):
-        print(f"laser = {robot.robot.get_front_middle_laser()}")
-        robot.robot.sleep(0.05)
-
-if __name__ == "__main__":
-    test()
