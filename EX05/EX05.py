@@ -27,6 +27,8 @@ class Robot:
         Returns:
           None if filter is empty, filtered value otherwise.
         """
+        if not self.values:
+            return None
         return statistics.median(self.values)
         # Your code here...
 
