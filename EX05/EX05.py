@@ -19,6 +19,12 @@ class Robot:
         """Read values."""
         front_laser = self.robot.get_front_middle_laser()
         self.values.append(front_laser)
+        first_median = statistics.median(self.values)
+        self.values.remove(front_laser)
+        self.values.append(first_median)
+        if len(self.values) == 6:
+            self.values.remove(self.values[0])
+
 
     def get_front_middle_laser(self) -> float:
         """
@@ -49,3 +55,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def test():
+    robot = Robot()
+    import dataset1 # or any other data file
+    data = dataset1.get_data()
+    robot.robot.load_data_profile(data)
+    for i in range(len(data)):
+        print(f"laser = {robot.robot.get_front_middle_laser()}")
+        robot.robot.sleep(0.05)
+
+if __name__ == "__main__":
+    test()
