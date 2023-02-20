@@ -16,6 +16,7 @@ class Robot:
         self.right_wheel = 0
         self.left_wheel = 0
         self.turnaround = 0
+        self.random_count = 1
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set robot reference."""
@@ -57,6 +58,16 @@ class Robot:
             self.turnaround = -1
             print("Value is " + str(self.last_value))
             return -1
+        elif tof_values == [False, True, True, True, True, False]:
+            if self.random_count == 1:
+                self.last_value = 1
+                self.random_count = self.random_count + 1
+            elif self.random_count == 2:
+                self.last_value = 0
+                self.random_count = self.random_count + 1
+            elif self.random_count == 3:
+                self.last_value = -1
+                self.random_count = 1
         else:
             print("Value is " + str(self.last_value))
             return self.last_value
