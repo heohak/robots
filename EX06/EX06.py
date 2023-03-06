@@ -1,4 +1,8 @@
+"""EX06 - Object Detection."""
+import math
+import statistics
 import PiBot
+
 
 class Robot:
     """Robot class."""
@@ -7,10 +11,26 @@ class Robot:
         """Class constructor."""
         self.robot = PiBot.PiBot()
         self.shutdown = False
+        self.values = []
+        self.end = 0
+        self.start = 0
         self.objects = []
+        self.check = False
+        self.angle = 0
+        self.right_encoder = 0
+        self.left_encoder = 0
+
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set Robot reference."""
         self.robot = robot
+
+    def get_angle(self):
+        """Get Robot angle."""
+        if self.right_encoder > 0:
+            self.angle = math.degrees(self.robot.WHEEL_DIAMETER * self.right_encoder * math.pi / 360 / (self.robot.AXIS_LENGTH / 2))
+        elif self.left_encoder > 0:
+            self.angle = 360 - math.degrees(self.robot.WHEEL_DIAMETER * self.left_encoder * math.pi / 360 / (self.robot.AXIS_LENGTH / 2))
+        return self.angle
 
     def get_objects(self) -> list:
         """
@@ -24,6 +44,15 @@ class Robot:
           the right-hand rule (e.g., turning left 90 degrees is 90, turning
           right 90 degrees is 270 degrees).
         """
+        if len(self.values) == 5:
+            if self.check:
+                if self.get_front_middle_laser() > 0.45:
+                    self.end = self.get_angle()
+                    self.objects.append((self.start + self.end) / 2)
+                    self.check = False
+            if self.get_front_middle_laser() < 0.45 and not self.check:
+                self.start = self.get_angle()
+                self.check = True
         return self.objects
 
     def get_front_middle_laser(self):
@@ -33,45 +62,34 @@ class Robot:
         Returns:
           None if filter is empty, filtered value otherwise.
         """
-        return self.robot.get_front_middle_laser()
+        if not self.values:
+            return None
+        return statistics.median(self.values)
 
     def sense(self):
         """Sense method according to the SPA architecture."""
-        distance = self.get_front_middle_laser()
-        if distance is not None and distance < 0.5:
-            left_encoder = self.robot.get_left_wheel_encoder()
-            right_encoder = self.robot.get_right_wheel_encoder()
-            delta = (right_encoder - left_encoder) * 0.025
-            angle = delta / distance
-            self.objects.append((angle, distance))
+        self.left_encoder = self.robot.get_left_wheel_encoder()
+        self.right_encoder = self.robot.get_right_wheel_encoder()
+        front_laser = self.robot.get_front_middle_laser()
+        self.values.append(front_laser)
+        if len(self.values) == 6:
+            self.values.pop(0)
 
     def spin(self):
-        """The main loop."""
+        """Initialize the main loop."""
         while not self.shutdown:
+            self.sense()
             print(f'Value is {self.get_front_middle_laser()}')
             self.robot.sleep(0.05)
             if self.robot.get_time() > 20:
                 self.shutdown = True
 
 
-
 def main():
-    """The  main entry point."""
+    """Initialize main entry."""
     robot = Robot()
     robot.spin()
 
 
 if __name__ == "__main__":
     main()
-
-def test():
-    robot = Robot()
-    import close # or any other data file
-    data = close.get_data()
-    robot.robot.load_data_profile(data)
-    for i in range(len(data)):
-        print(f"laser = {robot.robot.get_front_middle_laser()}")
-        robot.robot.sleep(0.05)
-
-if __name__ == "__main__":
-    test()
