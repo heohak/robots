@@ -25,7 +25,7 @@ class Robot:
         self.robot = robot
 
     def get_angle(self):
-        """Get Robot angle."""
+        """Get Robot angles."""
         if self.right_encoder > 0:
             self.angle = math.degrees(self.robot.WHEEL_DIAMETER * self.right_encoder * math.pi / 360 / (self.robot.AXIS_LENGTH / 2))
         elif self.left_encoder > 0:
