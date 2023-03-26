@@ -8,21 +8,17 @@ class Robot:
     def __init__(self):
         """Class constructor."""
         self.robot = PiBot.PiBot()
-        self.p = 0.0
-        self.i = 0.0
-        self.d = 0.0
         self.left_wheel_speed_setpoint = 0
         self.right_wheel_speed_setpoint = 0
         self.left_wheel_error_sum = 0
         self.right_wheel_error_sum = 0
         self.left_wheel_last_error = 0
         self.right_wheel_last_error = 0
+        self.p = 0
+        self.i = 0
+        self.d = 0
         self.left_wheel_pid_output = 0
         self.right_wheel_pid_output = 0
-
-    def set_robot(self, robot: PiBot.PiBot()) -> None:
-        """Set the API reference."""
-        self.robot = robot
 
     def set_pid_parameters(self, p: float, i: float, d: float):
         self.p = p
@@ -42,7 +38,6 @@ class Robot:
         return self.right_wheel_pid_output
 
     def sense(self):
-        self.robot.update()
         left_wheel_actual_speed = self.robot.get_left_wheel_encoder()
         right_wheel_actual_speed = self.robot.get_right_wheel_encoder()
 
@@ -52,6 +47,7 @@ class Robot:
         self.left_wheel_error_sum += left_wheel_error
         self.right_wheel_error_sum += right_wheel_error
 
+        # Limit the integral term to prevent windup
         max_integral = 100
         self.left_wheel_error_sum = max(min(self.left_wheel_error_sum, max_integral), -max_integral)
         self.right_wheel_error_sum = max(min(self.right_wheel_error_sum, max_integral), -max_integral)
@@ -60,11 +56,11 @@ class Robot:
         right_wheel_error_derivative = right_wheel_error - self.right_wheel_last_error
 
         self.left_wheel_pid_output = (self.p * left_wheel_error +
-                                       self.i * self.left_wheel_error_sum +
-                                       self.d * left_wheel_error_derivative)
+                                   self.i * self.left_wheel_error_sum +
+                                   self.d * left_wheel_error_derivative)
         self.right_wheel_pid_output = (self.p * right_wheel_error +
-                                        self.i * self.right_wheel_error_sum +
-                                        self.d * right_wheel_error_derivative)
+                                    self.i * self.right_wheel_error_sum +
+                                    self.d * right_wheel_error_derivative)
 
         self.left_wheel_last_error = left_wheel_error
         self.right_wheel_last_error = right_wheel_error
@@ -72,6 +68,7 @@ class Robot:
     def act(self):
         self.robot.set_left_wheel_speed(self.left_wheel_pid_output)
         self.robot.set_right_wheel_speed(self.right_wheel_pid_output)
+
 
     def spin(self):
         """Spin loop."""
