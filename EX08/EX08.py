@@ -20,6 +20,10 @@ class Robot:
         self.left_wheel_pid_output = 0
         self.right_wheel_pid_output = 0
 
+    def set_robot(self, robot: PiBot.PiBot()) -> None:
+        """Set the API reference."""
+        self.robot = robot
+
     def set_pid_parameters(self, p: float, i: float, d: float):
         self.p = p
         self.i = i
