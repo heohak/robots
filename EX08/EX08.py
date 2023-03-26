@@ -91,6 +91,11 @@ class Robot:
         self.left_wheel_error_sum += left_wheel_error
         self.right_wheel_error_sum += right_wheel_error
 
+        # Limit the integral term to prevent windup
+        max_integral = 100
+        self.left_wheel_error_sum = max(min(self.left_wheel_error_sum, max_integral), -max_integral)
+        self.right_wheel_error_sum = max(min(self.right_wheel_error_sum, max_integral), -max_integral)
+
         left_wheel_error_derivative = left_wheel_error - self.left_wheel_last_error
         right_wheel_error_derivative = right_wheel_error - self.right_wheel_last_error
 
