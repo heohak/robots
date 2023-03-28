@@ -13,36 +13,32 @@ class Robot:
         self.robot = robot
 
     def get_encoder_odometry(self):
-        return tuple(self.encoder_odometry)
+        return self.encoder_odometry
 
     def get_imu_odometry(self):
-        return tuple(self.imu_odometry)
+        return self.imu_odometry
 
     def sense(self):
+        """SPA architecture sense block."""
         left_encoder = self.robot.get_left_wheel_encoder()
         right_encoder = self.robot.get_right_wheel_encoder()
         imu_yaw = self.robot.get_rotation()
 
-        # Compute the change in encoder values
         left_delta = (left_encoder - self.prev_left_encoder) * self.robot.WHEEL_DIAMETER * math.pi
         right_delta = (right_encoder - self.prev_right_encoder) * self.robot.WHEEL_DIAMETER * math.pi
-        # Update the previous encoder values
+
         self.prev_left_encoder = left_encoder
         self.prev_right_encoder = right_encoder
 
-        # Calculate the average distance traveled and the change in yaw
         avg_delta = (left_delta + right_delta) / 2
         yaw_delta = (right_delta - left_delta) / self.robot.AXIS_LENGTH
 
-        # Update the encoder odometry
         self.encoder_odometry[0] += avg_delta * math.cos(self.encoder_odometry[2] + yaw_delta / 2)
         self.encoder_odometry[1] += avg_delta * math.sin(self.encoder_odometry[2] + yaw_delta / 2)
         self.encoder_odometry[2] += yaw_delta
 
-        # Update the IMU odometry
         self.imu_odometry[0] += avg_delta * math.cos(imu_yaw)
         self.imu_odometry[1] += avg_delta * math.sin(imu_yaw)
-        self.imu_odometry[2] = imu_yaw
 
     def spin(self):
         """Spin loop."""
