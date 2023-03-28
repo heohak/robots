@@ -9,6 +9,9 @@ class Robot:
 
     def __init__(self):
         """Class constructor."""
+        self.front_laser_start = None
+        self.right_laser_start = None
+        self.left_laser_start = None
         self.robot = PiBot.PiBot()
         self.shutdown = False
         self.values = []
@@ -28,6 +31,7 @@ class Robot:
         self.front_laser = 0
         self.right_laser = 0
         self.left_laser = 0
+        self.state = "search"
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set Robot reference."""
@@ -55,15 +59,16 @@ class Robot:
         """
         if len(self.values) == 5:
             if self.check:
-                if self.get_front_middle_laser() > 0.45:
+                if self.get_front_middle_laser() > 0.5:
                     self.end = self.get_angle()
                     self.objects.append((self.start + self.end) / 2)
                     self.check = False
                     print('new check')
-            if self.get_front_middle_laser() < 0.45 and not self.check:
-                self.start = self.get_angle()
-                self.check = True
-        return self.objects
+            if self.get_front_middle_laser() < 0.5 and not self.check:
+                if (self.front_laser_start - self.front_laser) > 0.2:
+                    self.start = self.get_angle()
+                    self.check = True
+        # return self.objects
 
     def get_front_middle_laser(self):
         """
@@ -79,11 +84,17 @@ class Robot:
     def sense(self):
         """Sense method according to the SPA architecture."""
         print('sense')
+        self.front_laser_start = self.front_laser
+        self.left_laser_start = self.left_laser
+        self.right_laser_start = self.right_laser
         self.left_encoder = self.robot.get_left_wheel_encoder()
         self.right_encoder = self.robot.get_right_wheel_encoder()
         self.front_laser = self.robot.get_front_middle_laser()
         self.right_laser = self.robot.get_front_right_laser()
         self.left_laser = self.robot.get_front_left_laser()
+        print(f"Front: {self.front_laser}")
+        print(f"Left: {self.left_laser}")
+        print(f"Right: {self.right_laser}")
         self.values.append(self.front_laser)
         if len(self.values) == 6:
             self.values.pop(0)
@@ -91,44 +102,22 @@ class Robot:
     def plan(self):
         """Plan action."""
         print('plan')
-        if self.front_laser < 0.1 or self.left_laser < 0.1 or self.right_laser < 0.1:
-            print("yeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyyeye")
-            self.stopp = True
-        if self.stopp is True:
+        if self.check is False and self.state == "search":
+            self.left_wheel = -6
+            self.right_wheel = 6
+            self.get_objects()
+        if self.check is True:
+            print("OBJECT DETECTED")
+            self.state = "drive"
             self.right_wheel = 0
             self.left_wheel = 0
-        elif (self.is_stopped_right or self.is_stopped) is True:
-            self.right_wheel = 15
-            self.left_wheel = 15
-            self.is_stopped = False
-            self.is_stopped_right = False
-            # self.check_left = False
-            print("Stopped right of the object")
-        elif self.check is False:
-            self.get_objects()
-            self.left_wheel = 8
-            self.right_wheel = -8
-            if self.front_laser < 0.1 or self.left_laser < 0.1 or self.right_laser < 0.1:
-                print("yeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyyeye")
-                self.stopp = True
-            print("Turning right")
-        elif self.check is True:
-            self.right_wheel = 0
-            self.left_wheel = 0
-            self.is_stopped_right = True
-            # self.check = True
-            # self.check_left = True
-            print("robot stops")
-        elif self.check_left is False:
-            self.get_objects()
-            self.left_wheel = -8
-            self.right_wheel = 8
-            if self.front_laser < 0.1 or self.left_laser < 0.1 or self.right_laser < 0.1:
-                print("yeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyeyyeye")
-                self.stopp = True
-            print("Turning left")
-
-
+        if self.state == "drive":
+            self.right_wheel = 10
+            self.left_wheel = 10
+            if self.front_laser < 0.1:
+                self.right_wheel = 0
+                self.left_wheel = 0
+                self.state = "stop"
 
     def act(self):
         """Act according to plan."""
