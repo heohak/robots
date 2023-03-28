@@ -1,69 +1,48 @@
 import math
 import PiBot
 
-
 class Robot:
-    """Robot class."""
-
     def __init__(self, initial_odometry=[0, 0, 0]):
-        """
-        Initialize variables.
-
-        Arguments:
-          initial_odometry -- Initial odometry(start position and angle),
-                              [x, y, yaw] in [meters, meters, radians]
-        """
         self.robot = PiBot.PiBot()
-        self.x, self.y, self.yaw = initial_odometry
-        self.prev_left_encoder = self.robot.get_left_wheel_encoder()
-        self.prev_right_encoder = self.robot.get_right_wheel_encoder()
+        self.prev_left_encoder = 0
+        self.prev_right_encoder = 0
+        self.encoder_odometry = initial_odometry[:]
+        self.imu_odometry = initial_odometry[:]
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
-        """Set the API reference."""
         self.robot = robot
 
     def get_encoder_odometry(self):
-        """
-        Return the encoder odometry.
-
-        Returns:
-           A tuple with x, y coordinates and yaw angle (x, y, yaw)
-           based on encoder data. The units must be (meters, meters, radians).
-        """
-        left_wheel_encoder = self.robot.get_left_wheel_encoder()
-        right_wheel_encoder = self.robot.get_right_wheel_encoder()
-
-        delta_left = (left_wheel_encoder - self.prev_left_encoder) * self.robot.WHEEL_DIAMETER * math.pi / 360
-        delta_right = (right_wheel_encoder - self.prev_right_encoder) * self.robot.WHEEL_DIAMETER * math.pi / 360
-
-        self.prev_left_encoder = left_wheel_encoder
-        self.prev_right_encoder = right_wheel_encoder
-
-        delta_s = (delta_right + delta_left) / 2
-        delta_yaw = (delta_right - delta_left) / self.robot.AXIS_LENGTH
-
-        self.x += delta_s * math.cos(self.yaw + delta_yaw / 2)
-        self.y += delta_s * math.sin(self.yaw + delta_yaw / 2)
-        self.yaw += delta_yaw
-
-        return self.x, self.y, self.yaw
+        return tuple(self.encoder_odometry)
 
     def get_imu_odometry(self):
-        """
-        Return the IMU odometry.
-
-        Returns:
-           A tuple with x, y coordinates and yaw angle (x, y, yaw)
-           based on encoder and IMU data. The units must be
-           (meters, meters, radians).
-        """
-        # Your code here...
-        pass
+        return tuple(self.imu_odometry)
 
     def sense(self):
-        """SPA architecture sense block."""
-        odometry = self.get_encoder_odometry()
-        print(f"Odometry: x={odometry[0]:.3f}, y={odometry[1]:.3f}, yaw={odometry[2]:.3f}")
+        left_encoder = self.robot.get_left_wheel_encoder()
+        right_encoder = self.robot.get_right_wheel_encoder()
+        imu_yaw = self.robot.get_rotation()
+
+        # Compute the change in encoder values
+        left_delta = (left_encoder - self.prev_left_encoder) * self.robot.WHEEL_DIAMETER * math.pi
+        right_delta = (right_encoder - self.prev_right_encoder) * self.robot.WHEEL_DIAMETER * math.pi
+        # Update the previous encoder values
+        self.prev_left_encoder = left_encoder
+        self.prev_right_encoder = right_encoder
+
+        # Calculate the average distance traveled and the change in yaw
+        avg_delta = (left_delta + right_delta) / 2
+        yaw_delta = (right_delta - left_delta) / self.robot.AXIS_LENGTH
+
+        # Update the encoder odometry
+        self.encoder_odometry[0] += avg_delta * math.cos(self.encoder_odometry[2] + yaw_delta / 2)
+        self.encoder_odometry[1] += avg_delta * math.sin(self.encoder_odometry[2] + yaw_delta / 2)
+        self.encoder_odometry[2] += yaw_delta
+
+        # Update the IMU odometry
+        self.imu_odometry[0] += avg_delta * math.cos(imu_yaw)
+        self.imu_odometry[1] += avg_delta * math.sin(imu_yaw)
+        self.imu_odometry[2] = imu_yaw
 
     def spin(self):
         """Spin loop."""
@@ -72,11 +51,15 @@ class Robot:
             self.robot.sleep(0.05)
 
 
-def main():
-    """The main entry point."""
+def test():
     robot = Robot()
-    robot.spin()
-
+    import spin_left # or any other data file
+    data = spin_left.get_data()
+    robot.robot.load_data_profile(data)
+    for i in range(len(data)):
+        robot.sense()
+        print(f"encoder {robot.robot.get_left_wheel_encoder()}")
+        robot.robot.sleep(0.05)
 
 if __name__ == "__main__":
-    main()
+    test()
