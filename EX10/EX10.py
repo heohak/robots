@@ -42,7 +42,7 @@ class Robot:
 
     def sense(self):
         """SPA architecture sense block."""
-        self.visible_objects = self.robot.get_cameraobjects()
+        self.visible_objects = self.robot.get_camera_objects()
 
     def spin(self):
         """The spin loop."""
