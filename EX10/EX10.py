@@ -40,19 +40,20 @@ class Robot:
         angle = ((cam_x_coord / 2) - x_coord) / cam_x_coord * fov_x_coord
 
         return math.radians(angle)
+
     def sense(self):
         """SPA architecture sense block."""
         self.visible_objects = self.robot.get_camera_objects()
 
     def spin(self):
-        """The spin loop."""
+        """Initialize the spin loop."""
         for _ in range(100):
             self.sense()
             self.robot.sleep(0.05)
 
 
 def main():
-    """Main entry point."""
+    """Initialize Main entry point."""
     robot = Robot()
     robot.spin()
 
