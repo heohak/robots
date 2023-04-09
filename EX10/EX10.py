@@ -32,14 +32,14 @@ class Robot:
         if not self.visible_objects:
             return None
 
-        closest_object = min(self.visible_objects, key=lambda obj: obj[2])
+        max_radius_obj = max(self.visible_objects, key=lambda obj: obj[2])
+        x_coord = max_radius_obj[1][0]
 
         cam_x_coord = self.cam_resolution[0]
         fov_x_coord = self.field_of_view[0]
-        angle = ((cam_x_coord / 2) - closest_object[1][0]) / cam_x_coord * fov_x_coord
+        angle = ((cam_x_coord / 2) - x_coord) / cam_x_coord * fov_x_coord
 
         return math.radians(angle)
-
     def sense(self):
         """SPA architecture sense block."""
         self.visible_objects = self.robot.get_camera_objects()
