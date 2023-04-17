@@ -59,9 +59,7 @@ class Robot:
             self.is_first = False
 
     def plan(self):
-        """
-        Plan the robot's actions based on its current state.
-        """
+        """Plan the robot's actions based on its current state."""
         if self.state == "forward":
             self.handle_forward_state()
         elif self.state == "turn_left":
@@ -70,9 +68,7 @@ class Robot:
             self.handle_turn_right_state()
 
     def handle_forward_state(self):
-        """
-        Handle the robot's actions when it is in the "forward" state.
-        """
+        """Handle the robot's actions when it is in the "forward" state."""
         if abs(self.left_rear_side - self.left_rear_side_begin) > 30 and self.left_rear_side > self.right_rear_side:
             print("num1")
             self.left_wheel_speed = -10
@@ -87,9 +83,7 @@ class Robot:
         self.check_and_prepare_for_turns()
 
     def adjust_rotation_based_on_last_turn(self):
-        """
-        Adjust the robot's rotation based on its last turn direction.
-        """
+        """Adjust the robot's rotation based on its last turn direction."""
         if self.last_turn == "left":
             if self.rotation > 177:
                 self.left_wheel_speed = 8
@@ -109,9 +103,7 @@ class Robot:
             self.right_wheel_speed = -10
 
     def check_and_prepare_for_turns(self):
-        """
-        Check if the robot needs to turn, and prepare for turning if needed.
-        """
+        """Check if the robot needs to turn, and prepare for turning if needed."""
         if abs(self.right_rear_side - self.right_side_previous) >= 200:
             self.prepare_for_turn("turn_left")
         elif abs(self.left_rear_side - self.left_side_previous) >= 200:
@@ -134,9 +126,7 @@ class Robot:
         self.state = turn_state
 
     def handle_turn_left_state(self):
-        """
-        Handle the robot's actions when it is in the "turn_left" state.
-        """
+        """Handle the robot's actions when it is in the "turn_left" state."""
         self.left_wheel_speed = -9
         self.right_wheel_speed = -8
         if self.rotation > 175:
@@ -144,9 +134,7 @@ class Robot:
             self.state = "forward"
 
     def handle_turn_right_state(self):
-        """
-        Handle the robot's actions when it is in the "turn_right" state.
-        """
+        """Handle the robot's actions when it is in the "turn_right" state."""
         self.left_wheel_speed = -8
         self.right_wheel_speed = -9
         if self.rotation < 5:
