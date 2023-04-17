@@ -76,23 +76,7 @@ class Robot:
             self.left_wheel_speed = -9
             self.right_wheel_speed = -10
         else:
-            if self.last_turn == "left":
-                if self.rotation > 177:
-                    self.left_wheel_speed = 8
-                    self.right_wheel_speed = -8
-                elif self.rotation < 174:
-                    self.left_wheel_speed = -8
-                    self.right_wheel_speed = 8
-            elif self.last_turn == "right":
-                if self.rotation > 3:
-                    self.left_wheel_speed = 8
-                    self.right_wheel_speed = -8
-                elif self.rotation < 0:
-                    self.left_wheel_speed = -8
-                    self.right_wheel_speed = 8
-            else:
-                self.left_wheel_speed = -10
-                self.right_wheel_speed = -10
+            self.turn_checker()
 
         if abs(self.right_rear_side - self.right_side_previous) >= 200:
             self.prepare_for_turn("turn_left")
@@ -129,6 +113,25 @@ class Robot:
         self.left_rear_str_previous = self.left_rear_str
         self.right_rear_str_previous = self.right_rear_str
         self.state = turn_state
+
+    def turn_checker(self):
+        if self.last_turn == "left":
+            if self.rotation > 177:
+                self.left_wheel_speed = 8
+                self.right_wheel_speed = -8
+            elif self.rotation < 174:
+                self.left_wheel_speed = -8
+                self.right_wheel_speed = 8
+        elif self.last_turn == "right":
+            if self.rotation > 3:
+                self.left_wheel_speed = 8
+                self.right_wheel_speed = -8
+            elif self.rotation < 0:
+                self.left_wheel_speed = -8
+                self.right_wheel_speed = 8
+        else:
+            self.left_wheel_speed = -10
+            self.right_wheel_speed = -10
 
     def act(self):
         """Act robot."""
