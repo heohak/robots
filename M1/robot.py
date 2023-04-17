@@ -115,6 +115,7 @@ class Robot:
         self.state = turn_state
 
     def turn_checker(self):
+        """Initialize turn checker."""
         if self.last_turn == "left":
             if self.rotation > 177:
                 self.left_wheel_speed = 8
