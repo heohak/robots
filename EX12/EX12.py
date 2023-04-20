@@ -118,31 +118,6 @@ class Robot:
           Trajectory to reach the goal as a list of coordinates
           (e.g., [(0, 0.5), (0, 1), (0, 1.5), (0, 2)])
         """
-        trajectory = [start]
-        current_position = start
-        reached_goal = False
-
-        while not reached_goal:
-            u_att_x, u_att_y = self.compute_attractor_gradient(current_position, goal)
-            u_rep_x, u_rep_y = self.compute_repulsion_gradient(current_position, self.obstacles)
-
-            gradient_x = u_att_x + u_rep_x
-            gradient_y = u_att_y + u_rep_y
-
-            gradient_norm = math.sqrt(gradient_x ** 2 + gradient_y ** 2)
-
-            step_x = step_size * (gradient_x / gradient_norm)
-            step_y = step_size * (gradient_y / gradient_norm)
-
-            new_position = (current_position[0] + step_x, current_position[1] + step_y)
-            trajectory.append(new_position)
-
-            if Robot.distance(new_position, goal) <= goal_tolerance:
-                reached_goal = True
-            else:
-                current_position = new_position
-
-        return trajectory
 
 
 def test():
