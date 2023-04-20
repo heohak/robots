@@ -102,22 +102,40 @@ class Robot:
                     * (1 / d)**2 * ((point[1] - y) / d)
         return (u_rep_x, u_rep_y)
 
-    def calculate_plan(self, start: tuple, goal: tuple, step_size: float,
-                       goal_tolerance: float = 0.1) -> list:
+    def calculate_plan(self, start_pos: tuple, target_pos: tuple, step_distance: float,
+                  target_margin: float = 0.1) -> list:
         """
-        Calculate the plan from start to goal or multiple goals via waypoints.
+        Determine the path from start_pos to target_pos or multiple targets through waypoints.
 
-        Arguments:
-          start -- start coordinates (x, y) as floats
-          goal -- tuple with goal coordinates (x, y) as floats
-          step_size -- the scalar value for each step in the plan (in meters)
-          goal_tolerance -- the goal tolerance (acceptable +/-
-                            from goal to terminate the algorithm)
+        Args:
+          start_pos -- initial coordinates (x, y) as floats
+          target_pos -- tuple containing target coordinates (x, y) as floats
+          step_distance -- the length of each step in the path (in meters)
+          target_margin -- the acceptable deviation from the target
+                           to terminate the algorithm
 
         Returns:
-          Trajectory to reach the goal as a list of coordinates
+          Pathway to reach the target as a list of coordinates
           (e.g., [(0, 0.5), (0, 1), (0, 1.5), (0, 2)])
         """
+        barriers = tuple(self.obstacles)
+        route = []
+        while True:
+            x_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[0] +
+                          self.compute_repulsion_gradient(start_pos, barriers)[0])
+            y_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[1] +
+                          self.compute_repulsion_gradient(start_pos, barriers)[1])
+
+            gradient_magnitude = math.sqrt(x_gradient ** 2 + y_gradient ** 2)
+            normalized_vector = (-(x_gradient / gradient_magnitude), -(y_gradient / gradient_magnitude))
+
+            start_pos = (start_pos[0] + normalized_vector[0] * step_distance,
+                         start_pos[1] + normalized_vector[1] * step_distance)
+
+            route.append(start_pos)
+            if self.distance(route[-1], target_pos) <= target_margin:
+                break
+        return route
 
 
 def test():
