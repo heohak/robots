@@ -1,8 +1,6 @@
 """EX12 - Potential Field Gradient Descent."""
 import PiBot
 import math
-import numpy as np
-
 
 
 class Robot:
@@ -120,24 +118,31 @@ class Robot:
           Trajectory to reach the goal as a list of coordinates
           (e.g., [(0, 0.5), (0, 1), (0, 1.5), (0, 2)])
         """
-        plan = [start]
-        current_point = start
-        max_iterations = 1000
-        iter_count = 0
+        trajectory = [start]
+        current_position = start
+        reached_goal = False
 
-        while Robot.distance(current_point, goal) > goal_tolerance and iter_count < max_iterations:
-            u_att = self.compute_attractor_gradient(current_point, goal)
-            u_rep = self.compute_repulsion_gradient(current_point, tuple(self.obstacles))
-            total_gradient = (u_att[0] + u_rep[0], u_att[1] + u_rep[1])
-            gradient_norm = Robot.distance((0, 0), total_gradient)
-            normalized_gradient = (total_gradient[0] / gradient_norm, total_gradient[1] / gradient_norm)
-            current_point = (current_point[0] - step_size * normalized_gradient[0],
-                             current_point[1] - step_size * normalized_gradient[1])
-            plan.append(current_point)
-            iter_count += 1
+        while not reached_goal:
+            u_att_x, u_att_y = self.compute_attractor_gradient(current_position, goal)
+            u_rep_x, u_rep_y = self.compute_repulsion_gradient(current_position, self.obstacles)
 
-        return plan
+            gradient_x = u_att_x + u_rep_x
+            gradient_y = u_att_y + u_rep_y
 
+            gradient_norm = math.sqrt(gradient_x ** 2 + gradient_y ** 2)
+
+            step_x = step_size * (gradient_x / gradient_norm)
+            step_y = step_size * (gradient_y / gradient_norm)
+
+            new_position = (current_position[0] + step_x, current_position[1] + step_y)
+            trajectory.append(new_position)
+
+            if Robot.distance(new_position, goal) <= goal_tolerance:
+                reached_goal = True
+            else:
+                current_position = new_position
+
+        return trajectory
 
 
 def test():
@@ -171,4 +176,5 @@ def main():
 
 
 if __name__ == "__main__":
-    test()
+    main()
+    # test()
