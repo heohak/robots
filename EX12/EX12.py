@@ -65,8 +65,8 @@ class Robot:
         else:
             u_att_x = (self.attraction_threshold
                        * self.attraction_coefficient * (point[0] - goal[0])) / d
-            u_att_y = (self.attraction_threshold *
-                       self.attraction_coefficient * (point[1] - goal[1])) / d
+            u_att_y = (self.attraction_threshold
+                       * self.attraction_coefficient * (point[1] - goal[1])) / d
         return u_att_x, u_att_y
 
     def compute_repulsion_gradient(self, point: tuple,
@@ -94,14 +94,11 @@ class Robot:
                                  obstacle[0] - point[0])
                 x = point[0] + d * math.cos(deg)
                 y = point[1] + d * math.sin(deg)
-                u_rep_x += self.repulsion_coefficient * ((1 / self.repulsion_threshold) - (1 / d)) \
-                           * (1 / d) ** 2 * ((point[0] - x) / d)
-                u_rep_y += self.repulsion_coefficient \
-                           * ((1 / self.repulsion_threshold) - (1 / d)) \
-                           * (1 / d) ** 2 * ((point[1] - y) / d)
+                u_rep_x += self.repulsion_coefficient * ((1 / self.repulsion_threshold) - (1 / d)) * (1 / d) ** 2 * ((point[0] - x) / d)
+                u_rep_y += self.repulsion_coefficient * ((1 / self.repulsion_threshold) - (1 / d)) * (1 / d) ** 2 * ((point[1] - y) / d)
         return u_rep_x, u_rep_y
 
-    def calculate_plan(self, start_pos: tuple, target_pos: tuple, step_distance: float, target_margin: float = 0.1)\
+    def calculate_plan(self, start_pos: tuple, target_pos: tuple, step_distance: float, target_margin: float = 0.1) \
             -> list:
         """
         Determine the path from start_pos to target_pos or multiple targets through waypoints.
@@ -121,10 +118,9 @@ class Robot:
         route = []
         while True:
             x_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[0]
-                          +
-                          self.compute_repulsion_gradient(start_pos, barriers)[0])
-            y_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[1] +
-                          self.compute_repulsion_gradient(start_pos, barriers)[1])
+                          + self.compute_repulsion_gradient(start_pos, barriers)[0])
+            y_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[1]
+                          + self.compute_repulsion_gradient(start_pos, barriers)[1])
 
             gradient_magnitude = math.sqrt(x_gradient ** 2 + y_gradient ** 2)
             normalized_vector = (-(x_gradient / gradient_magnitude), -(y_gradient / gradient_magnitude))
