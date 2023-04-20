@@ -103,7 +103,7 @@ class Robot:
         return (u_rep_x, u_rep_y)
 
     def calculate_plan(self, start: tuple, goal: tuple, step_size: float,
-                       goal_tolerance: float = 0.1) -> list:
+                       goal_tolerance: float = 0.1, max_iterations: int = 1000) -> list:
         """
         Calculate the plan from start to goal or multiple goals via waypoints.
 
