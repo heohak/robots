@@ -26,7 +26,7 @@ class Robot:
         Returns:
           The distance between two points.
         """
-        return math.sqrt((first[0] - second[0])**2 + (first[1] - second[1])**2)
+        return math.sqrt((first[0] - second[0]) ** 2 + (first[1] - second[1]) ** 2)
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Se the API reference."""
@@ -63,11 +63,11 @@ class Robot:
             u_att_x = self.attraction_coefficient * (point[0] - goal[0])
             u_att_y = self.attraction_coefficient * (point[1] - goal[1])
         else:
-            u_att_x = (self.attraction_threshold *
-                       self.attraction_coefficient * (point[0] - goal[0])) / d
+            u_att_x = (self.attraction_threshold
+                       * self.attraction_coefficient * (point[0] - goal[0])) / d
             u_att_y = (self.attraction_threshold *
                        self.attraction_coefficient * (point[1] - goal[1])) / d
-        return (u_att_x, u_att_y)
+        return u_att_x, u_att_y
 
     def compute_repulsion_gradient(self, point: tuple,
                                    obstacles: tuple) -> tuple:
@@ -94,16 +94,15 @@ class Robot:
                                  obstacle[0] - point[0])
                 x = point[0] + d * math.cos(deg)
                 y = point[1] + d * math.sin(deg)
-                u_rep_x += self.repulsion_coefficient \
-                    * ((1 / self.repulsion_threshold) - (1 / d)) \
-                    * (1 / d)**2 * ((point[0] - x) / d)
+                u_rep_x += self.repulsion_coefficient * ((1 / self.repulsion_threshold) - (1 / d)) \
+                           * (1 / d) ** 2 * ((point[0] - x) / d)
                 u_rep_y += self.repulsion_coefficient \
-                    * ((1 / self.repulsion_threshold) - (1 / d)) \
-                    * (1 / d)**2 * ((point[1] - y) / d)
-        return (u_rep_x, u_rep_y)
+                           * ((1 / self.repulsion_threshold) - (1 / d)) \
+                           * (1 / d) ** 2 * ((point[1] - y) / d)
+        return u_rep_x, u_rep_y
 
-    def calculate_plan(self, start_pos: tuple, target_pos: tuple, step_distance: float,
-                  target_margin: float = 0.1) -> list:
+    def calculate_plan(self, start_pos: tuple, target_pos: tuple, step_distance: float, target_margin: float = 0.1)\
+            -> list:
         """
         Determine the path from start_pos to target_pos or multiple targets through waypoints.
 
@@ -121,7 +120,8 @@ class Robot:
         barriers = tuple(self.obstacles)
         route = []
         while True:
-            x_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[0] +
+            x_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[0]
+                          +
                           self.compute_repulsion_gradient(start_pos, barriers)[0])
             y_gradient = (self.compute_attractor_gradient(start_pos, target_pos)[1] +
                           self.compute_repulsion_gradient(start_pos, barriers)[1])
@@ -156,12 +156,12 @@ def plot(plan: tuple):
     zipped = list(zip(*plan))
     matplotlib.pyplot.plot(zipped[0], zipped[1])
     matplotlib.pyplot.axis([0, max(max(zipped[0]), max(zipped[1])), 0,
-                           max(max(zipped[0]), max(zipped[1]))])
+                            max(max(zipped[0]), max(zipped[1]))])
     matplotlib.pyplot.savefig("fig.png")
 
 
 def main():
-    """The main entry point."""
+    """Initialize main entry point."""
     robot = Robot()
     robot.set_obstacles(((0.2, 3), (-0.3, 4)))
     plan = robot.calculate_plan((0, 0), (0, 6), 0.15)
