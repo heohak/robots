@@ -120,8 +120,9 @@ class Robot:
         """
         current_position = start
         trajectory = [start]
+        iteration = 0
 
-        while Robot.distance(current_position, goal) > goal_tolerance:
+        while Robot.distance(current_position, goal) > goal_tolerance and iteration < max_iterations:
             att_gradient = self.compute_attractor_gradient(current_position, goal)
             rep_gradient = self.compute_repulsion_gradient(current_position, tuple(self.obstacles))
             total_gradient = (att_gradient[0] + rep_gradient[0], att_gradient[1] + rep_gradient[1])
@@ -135,6 +136,7 @@ class Robot:
                                 current_position[1] + step_size * normalized_gradient[1])
 
             trajectory.append(current_position)
+            iteration += 1
 
         return trajectory
 
