@@ -1,8 +1,6 @@
 """EX12 - Potential Field Gradient Descent."""
 import PiBot
 import math
-from typing import List, Tuple
-
 
 
 class Robot:
@@ -34,7 +32,7 @@ class Robot:
         """Se the API reference."""
         self.robot = robot
 
-    def set_obstacles(self, obstacles: List[Tuple[float, float]]) -> None:
+    def set_obstacles(self, obstacles: tuple) -> None:
         """
         Set the obstacles.
 
@@ -72,7 +70,7 @@ class Robot:
         return (u_att_x, u_att_y)
 
     def compute_repulsion_gradient(self, point: tuple,
-                               obstacles: List[Tuple[float, float]]) -> tuple:
+                                   obstacles: tuple) -> tuple:
         """
         Compute the repulsion gradient.
 
@@ -125,7 +123,7 @@ class Robot:
 
         while Robot.distance(current_position, goal) > goal_tolerance:
             att_gradient = self.compute_attractor_gradient(current_position, goal)
-            rep_gradient = self.compute_repulsion_gradient(current_position, self.obstacles)
+            rep_gradient = self.compute_repulsion_gradient(current_position, tuple(self.obstacles))
             total_gradient = (att_gradient[0] + rep_gradient[0], att_gradient[1] + rep_gradient[1])
 
             # Normalize the total gradient
@@ -139,6 +137,7 @@ class Robot:
             trajectory.append(current_position)
 
         return trajectory
+
 
 
 def test():
