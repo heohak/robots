@@ -159,7 +159,7 @@ class Robot:
                 self.last_turn = "left"
                 self.state = "forward"
         elif self.state == "turn_right":
-            self.left_wheel_speed = -16
+            self.left_wheel_speed = -12
             self.right_wheel_speed = -99
             if self.rotation < -185:
                 self.left_wheel_speed = 0
