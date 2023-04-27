@@ -290,8 +290,8 @@ class Robot:
         while not self.shutdown:
             # print(abs(self.right_rear_side))
             # print(abs(self.left_rear_side))
-            # print(self.right_rear_str)  # TAGUMINE OTSE
-            # print(self.left_rear_str)   # TAGUMINE OTSE
+            print(self.right_rear_str)  # TAGUMINE OTSE
+            print(self.left_rear_str)   # TAGUMINE OTSE
             print(self.rotation)
             print(abs(self.rotation % 180))
             print(self.state)
