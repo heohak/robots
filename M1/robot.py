@@ -1,4 +1,6 @@
-"""Maze - Bronze."""
+"""EX06 - Object Detection."""
+import statistics
+
 import PiBot
 
 
@@ -28,7 +30,7 @@ class Robot:
         self.rotation = 0
         self.rotation_previous = 0
 
-        self.last_turn = "forward"
+        self.last_turn = "left"
 
         self.is_first = True
 
@@ -40,9 +42,43 @@ class Robot:
         self.left_side_previous = 0
         self.right_side_previous = 0
 
+        self.medians_list_l = []
+        self.data_l = []
+
+        self.medians_list_r = []
+        self.data_r = []
+
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set Robot reference."""
         self.robot = robot
+
+    def get_right_laser(self):
+        """
+        Return the filtered value.
+
+        Returns:
+          None if filter is empty, filtered value otherwise.
+        """
+        if self.right_rear_side:
+            if len(self.data_r) < 7:
+                self.data_r.append(self.right_rear_side)
+            else:
+                self.data_r.pop(0)
+                self.data_r.append(self.right_rear_side)
+
+    def get_left_laser(self):
+        """
+        Return the filtered value.
+
+        Returns:
+          None if filter is empty, filtered value otherwise.
+        """
+        if self.left_rear_side:
+            if len(self.data_l) < 7:
+                self.data_l.append(self.left_rear_side)
+            else:
+                self.data_l.pop(0)
+                self.data_l.append(self.left_rear_side)
 
     def sense(self):
         """Sense method according to the SPA architecture."""
@@ -51,6 +87,9 @@ class Robot:
         self.left_rear_str = self.robot.get_rear_left_straight_ir()
         self.right_rear_str = self.robot.get_rear_right_straight_ir()
         self.rotation = self.robot.get_rotation()
+
+        self.get_right_laser()
+        self.get_left_laser()
         if self.is_first:
             self.right_side_previous = self.right_rear_side
             self.left_side_previous = self.left_rear_side
@@ -59,80 +98,75 @@ class Robot:
             self.is_first = False
 
     def plan(self):
-        """Plan the robot's actions based on its current state."""
+        """Plan robot."""
         if self.state == "forward":
-            self.handle_forward_state()
-        elif self.state == "turn_left" or self.state == "turn_right":
-            self.handle_turn_state()
-
-    def handle_forward_state(self):
-        """Handle the robot's actions when it is in the "forward" state."""
-        if abs(self.left_rear_side - self.left_rear_side_begin) > 30 and self.left_rear_side > self.right_rear_side:
-            print("num1")
             self.left_wheel_speed = -10
-            self.right_wheel_speed = -9
-        elif abs(self.right_rear_side - self.right_rear_side_begin) > 30 and self.right_rear_side > self.left_rear_side:
-            print("num2")
-            self.left_wheel_speed = -9
             self.right_wheel_speed = -10
-        else:
-            self.turn_checker()
+            if abs(self.left_rear_side - self.left_rear_side_begin) > 30 and self.left_rear_side > self.right_rear_side:
+                print("num1")
+                self.left_wheel_speed = -10
+                self.right_wheel_speed = -9
+            elif abs(self.right_rear_side - self.right_rear_side_begin) > 30 and self.right_rear_side > self.left_rear_side:
+                print("num2")
+                self.left_wheel_speed = -9
+                self.right_wheel_speed = -10
+            else:
+                if self.last_turn == "left":
+                    if self.rotation > 3:
+                        self.left_wheel_speed = 8
+                        self.right_wheel_speed = -8
+                    elif self.rotation < 0:
+                        self.left_wheel_speed = -8
+                        self.right_wheel_speed = 8
+                elif self.last_turn == "right":
+                    if self.rotation > -177:
+                        self.left_wheel_speed = 8
+                        self.right_wheel_speed = -8
+                    elif self.rotation < -180:
+                        self.left_wheel_speed = -8
+                        self.right_wheel_speed = 8
+        self.plan2()
 
-        if abs(self.right_rear_side - self.right_side_previous) >= 200:
-            self.prepare_for_turn("turn_left")
-        elif abs(self.left_rear_side - self.left_side_previous) >= 200:
-            self.prepare_for_turn("turn_right")
-        else:
-            self.right_side_previous = self.right_rear_side
-            self.left_side_previous = self.left_rear_side
-
-    def handle_turn_state(self):
-        """Handle the robot's actions when it is in the "turn_left" or "turn_right" state."""
-        if self.state == "turn_left":
-            self.left_wheel_speed = -9
-            self.right_wheel_speed = -8
-            if self.rotation > 175:
+    def plan2(self):
+        """Create plan 2."""
+        if self.state == "forward":
+            if statistics.median(self.data_r) < 300 and statistics.median(self.data_l) < 400:
+                self.left_wheel_speed = 0
+                self.right_wheel_speed = 0
+                self.shutdown = True
+            elif statistics.median(self.data_r) < 300:
+                self.left_wheel_speed = 0
+                self.right_wheel_speed = 0
+                self.left_rear_str_previous = self.left_rear_str
+                self.right_rear_str_previous = self.right_rear_str
+                self.state = "turn_left"
+            elif statistics.median(self.data_l) < 400:
+                self.left_wheel_speed = 0
+                self.right_wheel_speed = 0
+                self.left_rear_str_previous = self.left_rear_str
+                self.right_rear_str_previous = self.right_rear_str
+                self.state = "turn_right"
+            else:
+                self.right_side_previous = self.right_rear_side
+                self.left_side_previous = self.left_rear_side
+        elif self.state == "turn_left":
+            self.left_wheel_speed = -99
+            self.right_wheel_speed = -6
+            if self.rotation > 5:
+                self.left_wheel_speed = 0
+                self.right_wheel_speed = 0
+                self.data_l = []
                 self.last_turn = "left"
                 self.state = "forward"
         elif self.state == "turn_right":
-            self.left_wheel_speed = -8
-            self.right_wheel_speed = -9
-            if self.rotation < 5:
+            self.left_wheel_speed = -6
+            self.right_wheel_speed = -99
+            if self.rotation < -185:
+                self.left_wheel_speed = 0
+                self.right_wheel_speed = 0
+                self.data_r = []
                 self.last_turn = "right"
                 self.state = "forward"
-
-    def prepare_for_turn(self, turn_state):
-        """
-        Prepare the robot for turning by updating its state and wheel speeds.
-
-        Args:
-            turn_state (str): The state to change to for turning ("turn_left" or "turn_right").
-        """
-        self.left_wheel_speed = 0
-        self.right_wheel_speed = 0
-        self.left_rear_str_previous = self.left_rear_str
-        self.right_rear_str_previous = self.right_rear_str
-        self.state = turn_state
-
-    def turn_checker(self):
-        """Initialize turn checker."""
-        if self.last_turn == "left":
-            if self.rotation > 177:
-                self.left_wheel_speed = 8
-                self.right_wheel_speed = -8
-            elif self.rotation < 174:
-                self.left_wheel_speed = -8
-                self.right_wheel_speed = 8
-        elif self.last_turn == "right":
-            if self.rotation > 3:
-                self.left_wheel_speed = 8
-                self.right_wheel_speed = -8
-            elif self.rotation < 0:
-                self.left_wheel_speed = -8
-                self.right_wheel_speed = 8
-        else:
-            self.left_wheel_speed = -10
-            self.right_wheel_speed = -10
 
     def act(self):
         """Act robot."""
@@ -142,6 +176,10 @@ class Robot:
     def spin(self):
         """Create the main loop."""
         while not self.shutdown:
+            print(abs(self.right_rear_side - self.right_rear_side_begin))
+            print(abs(self.left_rear_side - self.left_rear_side_begin))
+            print(self.rotation)
+            print(self.state)
             self.sense()
             self.plan()
             self.act()
