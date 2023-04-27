@@ -1,0 +1,1114 @@
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2a
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2b
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2c
+	Done
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2a
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2b
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2c
+	Done
+	Done
+right_rear: 0
+left rear: 0
+tagumine otse: 0
+tagumine otse: 0
+right_rear: 451
+left rear: 524
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 453
+left rear: 525
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 454
+left rear: 522
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 454
+left rear: 520
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 456
+left rear: 514
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 456
+left rear: 515
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 454
+left rear: 518
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 450
+left rear: 521
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 447
+left rear: 520
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 449
+left rear: 519
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 453
+left rear: 516
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 455
+left rear: 510
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 456
+left rear: 507
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 454
+left rear: 505
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 454
+left rear: 508
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 454
+left rear: 511
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 451
+left rear: 514
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 448
+left rear: 516
+tagumine otse: 226
+tagumine otse: 387
+right_rear: 448
+left rear: 516
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 449
+left rear: 516
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 451
+left rear: 514
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 450
+left rear: 512
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 449
+left rear: 514
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 448
+left rear: 517
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 443
+left rear: 520
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 443
+left rear: 519
+tagumine otse: 227
+tagumine otse: 389
+right_rear: 443
+left rear: 519
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 447
+left rear: 517
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 449
+left rear: 512
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 450
+left rear: 508
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 451
+left rear: 505
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 451
+left rear: 507
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 450
+left rear: 511
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 447
+left rear: 515
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 448
+left rear: 515
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 448
+left rear: 514
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 451
+left rear: 511
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 451
+left rear: 505
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 451
+left rear: 506
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 449
+left rear: 507
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 448
+left rear: 512
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 447
+left rear: 514
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 448
+left rear: 515
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 448
+left rear: 513
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 451
+left rear: 511
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 451
+left rear: 507
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 450
+left rear: 506
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 450
+left rear: 509
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 451
+left rear: 511
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 449
+left rear: 513
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 447
+left rear: 513
+tagumine otse: 227
+tagumine otse: 388
+right_rear: 449
+left rear: 512
+tagumine otse: 227
+tagumine otse: 387
+right_rear: 455
+left rear: 508
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 462
+left rear: 502
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 468
+left rear: 496
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 467
+left rear: 497
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 468
+left rear: 498
+tagumine otse: 228
+tagumine otse: 386
+right_rear: 468
+left rear: 498
+tagumine otse: 228
+tagumine otse: 387
+right_rear: 468
+left rear: 498
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 467
+left rear: 497
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 466
+left rear: 494
+tagumine otse: 229
+tagumine otse: 386
+num1
+right_rear: 467
+left rear: 492
+tagumine otse: 229
+tagumine otse: 386
+num1
+right_rear: 470
+left rear: 491
+tagumine otse: 228
+tagumine otse: 387
+num1
+right_rear: 473
+left rear: 490
+tagumine otse: 228
+tagumine otse: 386
+num1
+right_rear: 474
+left rear: 488
+tagumine otse: 228
+tagumine otse: 386
+num1
+right_rear: 475
+left rear: 489
+tagumine otse: 228
+tagumine otse: 387
+num1
+right_rear: 476
+left rear: 489
+tagumine otse: 228
+tagumine otse: 387
+num1
+right_rear: 475
+left rear: 489
+tagumine otse: 228
+tagumine otse: 387
+num1
+right_rear: 475
+left rear: 491
+tagumine otse: 229
+tagumine otse: 387
+num1
+right_rear: 477
+left rear: 491
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 477
+left rear: 495
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 478
+left rear: 496
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 478
+left rear: 496
+tagumine otse: 229
+tagumine otse: 386
+num1
+right_rear: 480
+left rear: 493
+tagumine otse: 229
+tagumine otse: 387
+num1
+right_rear: 483
+left rear: 493
+tagumine otse: 229
+tagumine otse: 386
+num1
+right_rear: 485
+left rear: 492
+tagumine otse: 229
+tagumine otse: 387
+num1
+right_rear: 488
+left rear: 493
+tagumine otse: 229
+tagumine otse: 387
+num1
+right_rear: 489
+left rear: 492
+tagumine otse: 229
+tagumine otse: 386
+right_rear: 491
+left rear: 494
+tagumine otse: 230
+tagumine otse: 387
+right_rear: 491
+left rear: 494
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 490
+left rear: 495
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 489
+left rear: 497
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 487
+left rear: 498
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 484
+left rear: 500
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 483
+left rear: 499
+tagumine otse: 228
+tagumine otse: 389
+right_rear: 485
+left rear: 500
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 486
+left rear: 499
+tagumine otse: 230
+tagumine otse: 387
+right_rear: 488
+left rear: 497
+tagumine otse: 230
+tagumine otse: 388
+right_rear: 487
+left rear: 497
+tagumine otse: 230
+tagumine otse: 387
+right_rear: 487
+left rear: 499
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 483
+left rear: 500
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 480
+left rear: 502
+tagumine otse: 228
+tagumine otse: 389
+right_rear: 477
+left rear: 503
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 475
+left rear: 502
+tagumine otse: 228
+tagumine otse: 388
+right_rear: 477
+left rear: 502
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 476
+left rear: 503
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 474
+left rear: 503
+tagumine otse: 229
+tagumine otse: 387
+right_rear: 472
+left rear: 504
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 472
+left rear: 505
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 474
+left rear: 506
+tagumine otse: 229
+tagumine otse: 389
+right_rear: 474
+left rear: 506
+tagumine otse: 229
+tagumine otse: 388
+right_rear: 475
+left rear: 506
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 507
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 476
+left rear: 508
+tagumine otse: 230
+tagumine otse: 388
+right_rear: 475
+left rear: 509
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 509
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 510
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 475
+left rear: 510
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 476
+left rear: 513
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 516
+tagumine otse: 229
+tagumine otse: 389
+right_rear: 475
+left rear: 517
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 517
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 475
+left rear: 517
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 474
+left rear: 518
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 474
+left rear: 519
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 472
+left rear: 519
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 469
+left rear: 521
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 466
+left rear: 520
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 465
+left rear: 520
+tagumine otse: 229
+tagumine otse: 389
+right_rear: 468
+left rear: 521
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 471
+left rear: 518
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 472
+left rear: 519
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 471
+left rear: 518
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 471
+left rear: 519
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 468
+left rear: 521
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 466
+left rear: 522
+tagumine otse: 229
+tagumine otse: 390
+right_rear: 465
+left rear: 521
+tagumine otse: 229
+tagumine otse: 391
+right_rear: 467
+left rear: 522
+tagumine otse: 229
+tagumine otse: 390
+right_rear: 470
+left rear: 521
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 471
+left rear: 518
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 469
+left rear: 516
+tagumine otse: 231
+tagumine otse: 390
+right_rear: 469
+left rear: 519
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 467
+left rear: 522
+tagumine otse: 230
+tagumine otse: 389
+right_rear: 464
+left rear: 525
+tagumine otse: 229
+tagumine otse: 390
+right_rear: 463
+left rear: 524
+tagumine otse: 229
+tagumine otse: 390
+right_rear: 466
+left rear: 523
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 467
+left rear: 521
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 469
+left rear: 517
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 468
+left rear: 510
+tagumine otse: 232
+tagumine otse: 388
+right_rear: 466
+left rear: 508
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 468
+left rear: 511
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 467
+left rear: 516
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 467
+left rear: 520
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 468
+left rear: 519
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 468
+left rear: 519
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 468
+left rear: 519
+tagumine otse: 230
+tagumine otse: 390
+right_rear: 470
+left rear: 518
+tagumine otse: 231
+tagumine otse: 390
+right_rear: 471
+left rear: 515
+tagumine otse: 231
+tagumine otse: 389
+right_rear: 470
+left rear: 512
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 472
+left rear: 510
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 471
+left rear: 508
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 473
+left rear: 508
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 475
+left rear: 506
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 476
+left rear: 506
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 475
+left rear: 504
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 475
+left rear: 500
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 475
+left rear: 498
+tagumine otse: 232
+tagumine otse: 389
+right_rear: 476
+left rear: 496
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 475
+left rear: 499
+tagumine otse: 233
+tagumine otse: 389
+right_rear: 472
+left rear: 502
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 467
+left rear: 505
+tagumine otse: 233
+tagumine otse: 389
+right_rear: 466
+left rear: 507
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 465
+left rear: 507
+tagumine otse: 231
+tagumine otse: 391
+right_rear: 467
+left rear: 509
+tagumine otse: 231
+tagumine otse: 391
+right_rear: 467
+left rear: 510
+tagumine otse: 232
+tagumine otse: 392
+right_rear: 469
+left rear: 512
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 470
+left rear: 509
+tagumine otse: 233
+tagumine otse: 391
+right_rear: 470
+left rear: 508
+tagumine otse: 233
+tagumine otse: 390
+right_rear: 471
+left rear: 508
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 474
+left rear: 509
+tagumine otse: 232
+tagumine otse: 390
+right_rear: 474
+left rear: 510
+tagumine otse: 233
+tagumine otse: 390
+right_rear: 474
+left rear: 509
+tagumine otse: 233
+tagumine otse: 391
+right_rear: 473
+left rear: 510
+tagumine otse: 232
+tagumine otse: 391
+right_rear: 474
+left rear: 510
+tagumine otse: 232
+tagumine otse: 391
+right_rear: 476
+left rear: 510
+tagumine otse: 233
+tagumine otse: 391
+right_rear: 477
+left rear: 510
+tagumine otse: 233
+tagumine otse: 391
+right_rear: 476
+left rear: 510
+tagumine otse: 233
+tagumine otse: 392
+right_rear: 477
+left rear: 508
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 476
+left rear: 508
+tagumine otse: 233
+tagumine otse: 391
+right_rear: 476
+left rear: 506
+tagumine otse: 234
+tagumine otse: 391
+right_rear: 476
+left rear: 505
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 475
+left rear: 504
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 475
+left rear: 503
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 474
+left rear: 502
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 474
+left rear: 503
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 474
+left rear: 502
+tagumine otse: 234
+tagumine otse: 392
+right_rear: 473
+left rear: 502
+tagumine otse: 235
+tagumine otse: 393
+right_rear: 472
+left rear: 504
+tagumine otse: 235
+tagumine otse: 393
+right_rear: 469
+left rear: 505
+tagumine otse: 235
+tagumine otse: 392
+right_rear: 467
+left rear: 505
+tagumine otse: 235
+tagumine otse: 393
+right_rear: 466
+left rear: 506
+tagumine otse: 235
+tagumine otse: 394
+right_rear: 463
+left rear: 505
+tagumine otse: 235
+tagumine otse: 393
+right_rear: 461
+left rear: 506
+tagumine otse: 235
+tagumine otse: 393
+right_rear: 459
+left rear: 508
+tagumine otse: 235
+tagumine otse: 394
+right_rear: 458
+left rear: 508
+tagumine otse: 236
+tagumine otse: 394
+right_rear: 459
+left rear: 507
+tagumine otse: 236
+tagumine otse: 395
+right_rear: 459
+left rear: 507
+tagumine otse: 236
+tagumine otse: 394
+right_rear: 460
+left rear: 508
+tagumine otse: 236
+tagumine otse: 395
+right_rear: 460
+left rear: 506
+tagumine otse: 236
+tagumine otse: 396
+right_rear: 461
+left rear: 504
+tagumine otse: 237
+tagumine otse: 396
+right_rear: 463
+left rear: 501
+tagumine otse: 238
+tagumine otse: 395
+right_rear: 462
+left rear: 499
+tagumine otse: 238
+tagumine otse: 395
+right_rear: 461
+left rear: 498
+tagumine otse: 238
+tagumine otse: 396
+right_rear: 461
+left rear: 498
+tagumine otse: 238
+tagumine otse: 396
+right_rear: 463
+left rear: 496
+tagumine otse: 239
+tagumine otse: 396
+right_rear: 465
+left rear: 495
+tagumine otse: 239
+tagumine otse: 397
+num1
+right_rear: 464
+left rear: 493
+tagumine otse: 239
+tagumine otse: 397
+num1
+right_rear: 461
+left rear: 493
+tagumine otse: 239
+tagumine otse: 396
+right_rear: 461
+left rear: 494
+tagumine otse: 239
+tagumine otse: 396
+num1
+right_rear: 460
+left rear: 493
+tagumine otse: 239
+tagumine otse: 396
+right_rear: 458
+left rear: 494
+tagumine otse: 240
+tagumine otse: 396
+right_rear: 458
+left rear: 494
+tagumine otse: 240
+tagumine otse: 396
+right_rear: 457
+left rear: 494
+tagumine otse: 240
+tagumine otse: 396
+num1
+right_rear: 456
+left rear: 493
+tagumine otse: 240
+tagumine otse: 395
+num1
+right_rear: 454
+left rear: 493
+tagumine otse: 240
+tagumine otse: 395
+right_rear: 451
+left rear: 496
+tagumine otse: 241
+tagumine otse: 395
+right_rear: 448
+left rear: 496
+tagumine otse: 241
+tagumine otse: 396
+right_rear: 448
+left rear: 497
+tagumine otse: 241
+tagumine otse: 395
+right_rear: 447
+left rear: 494
+tagumine otse: 241
+tagumine otse: 396
+right_rear: 446
+left rear: 494
+tagumine otse: 242
+tagumine otse: 396
+right_rear: 446
+left rear: 494
+tagumine otse: 243
+tagumine otse: 396
+num1
+right_rear: 446
+left rear: 493
+tagumine otse: 243
+tagumine otse: 397
+right_rear: 443
+left rear: 494
+tagumine otse: 242
+tagumine otse: 397
+num1
+right_rear: 441
+left rear: 493
+tagumine otse: 243
+tagumine otse: 397
+right_rear: 438
+left rear: 494
+tagumine otse: 243
+tagumine otse: 398
+num1
+right_rear: 435
+left rear: 493
+tagumine otse: 244
+tagumine otse: 398
+right_rear: 438
+left rear: 494
+tagumine otse: 244
+tagumine otse: 398
+right_rear: 438
+left rear: 494
+tagumine otse: 244
+tagumine otse: 399
+right_rear: 438
+left rear: 496
+tagumine otse: 244
+tagumine otse: 399
+right_rear: 437
+left rear: 496
+tagumine otse: 245
+tagumine otse: 399
+right_rear: 435
+left rear: 494
+tagumine otse: 246
+tagumine otse: 399
+num1
+right_rear: 432
+left rear: 490
+tagumine otse: 246
+tagumine otse: 399
+num1
+right_rear: 429
+left rear: 489
+tagumine otse: 246
+tagumine otse: 400
+num1
+right_rear: 429
+left rear: 486
+tagumine otse: 247
+tagumine otse: 400
+num1
+right_rear: 428
+left rear: 479
+tagumine otse: 247
+tagumine otse: 400
+num1
+right_rear: 427
+left rear: 474
+tagumine otse: 248
+tagumine otse: 400
+num1
+right_rear: 426
+left rear: 467
+tagumine otse: 248
+tagumine otse: 401
+num1
+right_rear: 425
+left rear: 458
+tagumine otse: 249
+tagumine otse: 401
+num1
+right_rear: 424
+left rear: 446
+tagumine otse: 249
+tagumine otse: 402
+num1
+right_rear: 424
+left rear: 428
+tagumine otse: 250
+tagumine otse: 404
+right_rear: 423
+left rear: 406
+tagumine otse: 251
+tagumine otse: 403
+right_rear: 421
+left rear: 384
+tagumine otse: 252
+tagumine otse: 404
+right_rear: 421
+left rear: 365
+tagumine otse: 253
+tagumine otse: 405
+num2
+right_rear: 418
+left rear: 354
+tagumine otse: 254
+tagumine otse: 406
+num2
+right_rear: 417
+left rear: 347
+tagumine otse: 255
+tagumine otse: 407
+num2
+right_rear: 416
+left rear: 343
+tagumine otse: 256
+tagumine otse: 408
+num2
+right_rear: 414
+left rear: 341
+tagumine otse: 258
+tagumine otse: 409
+num2
+right_rear: 412
+left rear: 341
+tagumine otse: 258
+tagumine otse: 410
+num2
+right_rear: 409
+left rear: 340
+tagumine otse: 259
+tagumine otse: 410
+num2
+right_rear: 407
+left rear: 340
+tagumine otse: 261
+tagumine otse: 411
+num2
+right_rear: 406
+left rear: 339
+tagumine otse: 262
+tagumine otse: 413
+num2
+right_rear: 402
+left rear: 339
+tagumine otse: 263
+tagumine otse: 414
+num2
+right_rear: 399
+left rear: 340
+tagumine otse: 265
+tagumine otse: 414
+num2
+right_rear: 397
+left rear: 340
+tagumine otse: 266
+tagumine otse: 415
+num2
+right_rear: 394
+left rear: 340
+tagumine otse: 268
+tagumine otse: 417
+num2
