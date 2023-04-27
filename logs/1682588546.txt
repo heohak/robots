@@ -1,0 +1,2317 @@
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2a
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2b
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2c
+	Done
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2a
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2b
+	Done
+	Done
+Set address from 0x29 to 0x29
+	Done
+	Done
+	Done
+Set address from 0x29 to 0x2c
+	Done
+	Done
+0
+0
+tagumine otse: 0
+tagumine otse: 0
+0
+0
+forward
+447
+512
+tagumine otse: 227
+tagumine otse: 387
+0.0
+0.0
+forward
+448
+513
+tagumine otse: 227
+tagumine otse: 386
+-0.10046564885496183
+179.89953435114504
+forward
+448
+511
+tagumine otse: 227
+tagumine otse: 386
+0.13742748091603052
+0.13742748091603052
+forward
+448
+508
+tagumine otse: 227
+tagumine otse: 386
+1.6692137404580152
+1.6692137404580152
+forward
+449
+508
+tagumine otse: 227
+tagumine otse: 385
+1.6692137404580152
+1.6692137404580152
+forward
+448
+506
+tagumine otse: 228
+tagumine otse: 386
+1.9354274809160303
+1.9354274809160303
+forward
+448
+506
+tagumine otse: 228
+tagumine otse: 386
+2.1894503816793893
+2.1894503816793893
+forward
+447
+504
+tagumine otse: 228
+tagumine otse: 385
+2.1894503816793893
+2.1894503816793893
+forward
+446
+503
+tagumine otse: 228
+tagumine otse: 385
+2.1894503816793893
+2.1894503816793893
+forward
+445
+502
+tagumine otse: 228
+tagumine otse: 385
+2.3625801526717556
+2.3625801526717556
+forward
+446
+500
+tagumine otse: 228
+tagumine otse: 385
+2.6029007633587784
+2.6029007633587784
+forward
+445
+499
+tagumine otse: 228
+tagumine otse: 385
+2.4779312977099233
+2.4779312977099233
+forward
+446
+498
+tagumine otse: 228
+tagumine otse: 385
+2.4779312977099233
+2.4779312977099233
+forward
+449
+498
+tagumine otse: 229
+tagumine otse: 385
+2.4779312977099233
+2.4779312977099233
+forward
+451
+497
+tagumine otse: 228
+tagumine otse: 386
+2.4779312977099233
+2.4779312977099233
+forward
+453
+496
+tagumine otse: 229
+tagumine otse: 385
+2.094038167938931
+2.094038167938931
+forward
+455
+493
+tagumine otse: 228
+tagumine otse: 386
+2.197770992366412
+2.197770992366412
+forward
+455
+491
+tagumine otse: 228
+tagumine otse: 385
+2.197770992366412
+2.197770992366412
+forward
+455
+488
+tagumine otse: 228
+tagumine otse: 385
+1.755068702290076
+1.755068702290076
+forward
+454
+487
+tagumine otse: 228
+tagumine otse: 385
+1.5236488549618317
+1.5236488549618317
+forward
+457
+485
+tagumine otse: 229
+tagumine otse: 386
+1.6698549618320606
+1.6698549618320606
+forward
+461
+485
+tagumine otse: 228
+tagumine otse: 386
+1.6698549618320606
+1.6698549618320606
+forward
+462
+484
+tagumine otse: 228
+tagumine otse: 386
+1.6698549618320606
+1.6698549618320606
+forward
+464
+483
+tagumine otse: 228
+tagumine otse: 385
+1.2957633587786255
+1.2957633587786255
+forward
+465
+483
+tagumine otse: 228
+tagumine otse: 386
+1.5644045801526714
+1.5644045801526714
+forward
+467
+482
+tagumine otse: 229
+tagumine otse: 386
+1.5644045801526714
+1.5644045801526714
+forward
+469
+483
+tagumine otse: 229
+tagumine otse: 386
+1.5644045801526714
+1.5644045801526714
+forward
+469
+485
+tagumine otse: 229
+tagumine otse: 386
+0.9205267175572515
+0.9205267175572515
+forward
+469
+487
+tagumine otse: 229
+tagumine otse: 386
+1.2513282442748088
+1.2513282442748088
+forward
+469
+487
+tagumine otse: 228
+tagumine otse: 386
+1.2513282442748088
+1.2513282442748088
+forward
+469
+487
+tagumine otse: 229
+tagumine otse: 385
+1.2513282442748088
+1.2513282442748088
+forward
+470
+487
+tagumine otse: 229
+tagumine otse: 386
+1.0361526717557248
+1.0361526717557248
+forward
+471
+486
+tagumine otse: 229
+tagumine otse: 386
+1.291038167938931
+1.291038167938931
+forward
+475
+484
+tagumine otse: 229
+tagumine otse: 386
+1.0427328244274805
+1.0427328244274805
+forward
+479
+484
+tagumine otse: 229
+tagumine otse: 386
+1.315541984732824
+1.315541984732824
+forward
+481
+484
+tagumine otse: 229
+tagumine otse: 386
+1.315541984732824
+1.315541984732824
+forward
+482
+484
+tagumine otse: 229
+tagumine otse: 386
+1.810748091603053
+1.810748091603053
+forward
+483
+484
+tagumine otse: 229
+tagumine otse: 386
+1.0731832061068698
+1.0731832061068698
+forward
+483
+485
+tagumine otse: 229
+tagumine otse: 386
+1.5003664122137401
+1.5003664122137401
+forward
+484
+486
+tagumine otse: 229
+tagumine otse: 386
+1.5003664122137401
+1.5003664122137401
+forward
+484
+485
+tagumine otse: 229
+tagumine otse: 386
+1.1974961832061064
+1.1974961832061064
+forward
+484
+485
+tagumine otse: 229
+tagumine otse: 386
+1.1974961832061064
+1.1974961832061064
+forward
+484
+486
+tagumine otse: 229
+tagumine otse: 386
+1.4956259541984729
+1.4956259541984729
+forward
+num2
+486
+484
+tagumine otse: 230
+tagumine otse: 387
+1.4956259541984729
+1.4956259541984729
+forward
+485
+485
+tagumine otse: 230
+tagumine otse: 387
+0.8000229007633582
+0.8000229007633582
+forward
+num2
+484
+483
+tagumine otse: 230
+tagumine otse: 387
+0.13003816793893075
+0.13003816793893075
+forward
+483
+484
+tagumine otse: 229
+tagumine otse: 386
+0.13003816793893075
+0.13003816793893075
+forward
+481
+483
+tagumine otse: 229
+tagumine otse: 387
+-0.33063358778626006
+179.66936641221375
+forward
+482
+483
+tagumine otse: 230
+tagumine otse: 387
+-0.33063358778626006
+179.66936641221375
+forward
+481
+481
+tagumine otse: 230
+tagumine otse: 387
+1.6803129770992362
+1.6803129770992362
+forward
+num2
+481
+476
+tagumine otse: 231
+tagumine otse: 386
+4.254251908396946
+4.254251908396946
+forward
+num2
+481
+473
+tagumine otse: 232
+tagumine otse: 386
+5.3340534351145035
+5.3340534351145035
+forward
+num2
+480
+471
+tagumine otse: 232
+tagumine otse: 386
+5.3340534351145035
+5.3340534351145035
+forward
+num2
+482
+469
+tagumine otse: 232
+tagumine otse: 386
+6.135396946564885
+6.135396946564885
+forward
+num2
+485
+469
+tagumine otse: 232
+tagumine otse: 386
+6.631190839694656
+6.631190839694656
+forward
+num2
+487
+467
+tagumine otse: 232
+tagumine otse: 386
+6.631190839694656
+6.631190839694656
+forward
+num2
+489
+467
+tagumine otse: 232
+tagumine otse: 386
+6.631190839694656
+6.631190839694656
+forward
+num2
+492
+467
+tagumine otse: 232
+tagumine otse: 386
+6.631190839694656
+6.631190839694656
+forward
+num2
+498
+465
+tagumine otse: 232
+tagumine otse: 387
+6.383587786259541
+6.383587786259541
+forward
+num2
+502
+466
+tagumine otse: 233
+tagumine otse: 386
+6.383587786259541
+6.383587786259541
+forward
+num2
+505
+466
+tagumine otse: 233
+tagumine otse: 387
+5.914748091603053
+5.914748091603053
+forward
+num2
+510
+466
+tagumine otse: 233
+tagumine otse: 387
+5.914748091603053
+5.914748091603053
+forward
+num2
+515
+466
+tagumine otse: 233
+tagumine otse: 387
+5.5292213740458
+5.5292213740458
+forward
+num2
+518
+467
+tagumine otse: 233
+tagumine otse: 387
+5.298068702290075
+5.298068702290075
+forward
+num2
+522
+468
+tagumine otse: 233
+tagumine otse: 387
+5.018908396946563
+5.018908396946563
+forward
+num2
+525
+468
+tagumine otse: 234
+tagumine otse: 387
+5.018908396946563
+5.018908396946563
+forward
+num2
+528
+467
+tagumine otse: 233
+tagumine otse: 387
+5.018908396946563
+5.018908396946563
+forward
+num2
+529
+467
+tagumine otse: 233
+tagumine otse: 387
+4.634198473282441
+4.634198473282441
+forward
+num2
+532
+467
+tagumine otse: 233
+tagumine otse: 387
+4.445519083969464
+4.445519083969464
+forward
+num2
+533
+466
+tagumine otse: 233
+tagumine otse: 387
+3.7698702290076325
+3.7698702290076325
+forward
+num2
+535
+465
+tagumine otse: 233
+tagumine otse: 387
+3.7698702290076325
+3.7698702290076325
+forward
+num2
+539
+462
+tagumine otse: 233
+tagumine otse: 387
+3.3189083969465636
+3.3189083969465636
+forward
+num2
+543
+460
+tagumine otse: 233
+tagumine otse: 387
+3.0939618320610673
+3.0939618320610673
+forward
+num2
+544
+460
+tagumine otse: 233
+tagumine otse: 387
+2.652076335877861
+2.652076335877861
+forward
+num2
+546
+461
+tagumine otse: 233
+tagumine otse: 387
+2.652076335877861
+2.652076335877861
+forward
+num2
+546
+460
+tagumine otse: 234
+tagumine otse: 387
+2.9826717557251894
+2.9826717557251894
+forward
+num2
+547
+460
+tagumine otse: 233
+tagumine otse: 388
+3.3152366412213725
+3.3152366412213725
+forward
+num2
+546
+459
+tagumine otse: 233
+tagumine otse: 388
+2.8439465648854947
+2.8439465648854947
+forward
+num2
+548
+460
+tagumine otse: 233
+tagumine otse: 387
+2.2917938931297694
+2.2917938931297694
+forward
+num2
+550
+459
+tagumine otse: 233
+tagumine otse: 387
+2.2917938931297694
+2.2917938931297694
+forward
+num2
+551
+458
+tagumine otse: 233
+tagumine otse: 388
+2.116183206106869
+2.116183206106869
+forward
+num2
+551
+457
+tagumine otse: 234
+tagumine otse: 388
+1.5142061068702275
+1.5142061068702275
+forward
+num2
+550
+456
+tagumine otse: 233
+tagumine otse: 388
+0.8951984732824413
+0.8951984732824413
+forward
+num2
+551
+455
+tagumine otse: 233
+tagumine otse: 387
+0.8951984732824413
+0.8951984732824413
+forward
+num2
+551
+453
+tagumine otse: 233
+tagumine otse: 387
+0.2290610687022887
+0.2290610687022887
+forward
+num2
+548
+453
+tagumine otse: 233
+tagumine otse: 388
+0.46103053435114366
+0.46103053435114366
+forward
+num2
+543
+453
+tagumine otse: 233
+tagumine otse: 388
+0.7118702290076322
+0.7118702290076322
+forward
+num2
+536
+456
+tagumine otse: 234
+tagumine otse: 388
+-0.16618320610687165
+179.83381679389313
+forward
+num2
+537
+459
+tagumine otse: 234
+tagumine otse: 389
+-0.16618320610687165
+179.83381679389313
+forward
+num2
+538
+462
+tagumine otse: 233
+tagumine otse: 389
+-0.3805343511450396
+179.61946564885497
+forward
+num2
+540
+463
+tagumine otse: 233
+tagumine otse: 389
+-0.9294198473282458
+179.07058015267177
+forward
+num2
+542
+462
+tagumine otse: 234
+tagumine otse: 389
+-1.1818778625954214
+178.81812213740457
+forward
+num2
+541
+462
+tagumine otse: 233
+tagumine otse: 389
+-1.1818778625954214
+178.81812213740457
+forward
+num2
+541
+462
+tagumine otse: 234
+tagumine otse: 389
+-1.3681984732824444
+178.63180152671757
+forward
+num2
+540
+462
+tagumine otse: 233
+tagumine otse: 389
+-2.0126488549618338
+177.98735114503816
+forward
+num2
+542
+461
+tagumine otse: 233
+tagumine otse: 390
+-2.4285572519083987
+177.5714427480916
+forward
+num2
+539
+462
+tagumine otse: 234
+tagumine otse: 390
+-2.4285572519083987
+177.5714427480916
+forward
+num2
+536
+463
+tagumine otse: 233
+tagumine otse: 390
+-2.4285572519083987
+177.5714427480916
+forward
+num2
+530
+465
+tagumine otse: 234
+tagumine otse: 389
+-2.7647099236641237
+177.23529007633587
+forward
+num2
+528
+465
+tagumine otse: 233
+tagumine otse: 389
+-3.499427480916032
+176.50057251908396
+forward
+num2
+528
+464
+tagumine otse: 233
+tagumine otse: 390
+-3.499427480916032
+176.50057251908396
+forward
+num2
+525
+463
+tagumine otse: 234
+tagumine otse: 390
+-3.499427480916032
+176.50057251908396
+forward
+num2
+523
+463
+tagumine otse: 234
+tagumine otse: 391
+-3.6833129770992383
+176.31668702290077
+forward
+num2
+523
+462
+tagumine otse: 234
+tagumine otse: 391
+-3.9357709923664137
+176.0642290076336
+forward
+num2
+522
+461
+tagumine otse: 234
+tagumine otse: 391
+-4.174274809160307
+175.8257251908397
+forward
+num2
+521
+462
+tagumine otse: 234
+tagumine otse: 391
+-4.59410687022901
+175.405893129771
+forward
+num2
+519
+462
+tagumine otse: 234
+tagumine otse: 390
+-4.59410687022901
+175.405893129771
+forward
+num2
+516
+463
+tagumine otse: 234
+tagumine otse: 391
+-5.354541984732826
+174.64545801526717
+forward
+num2
+510
+462
+tagumine otse: 234
+tagumine otse: 391
+-5.113412213740459
+174.88658778625955
+forward
+num2
+505
+462
+tagumine otse: 234
+tagumine otse: 391
+-5.269419847328246
+174.73058015267176
+forward
+num2
+502
+464
+tagumine otse: 234
+tagumine otse: 392
+-5.269419847328246
+174.73058015267176
+forward
+num2
+497
+464
+tagumine otse: 234
+tagumine otse: 392
+-5.429358778625955
+174.57064122137405
+forward
+num2
+493
+465
+tagumine otse: 234
+tagumine otse: 392
+-5.667862595419849
+174.33213740458015
+forward
+num2
+488
+466
+tagumine otse: 234
+tagumine otse: 392
+-5.8547786259542
+174.1452213740458
+forward
+num2
+487
+467
+tagumine otse: 234
+tagumine otse: 393
+-5.8547786259542
+174.1452213740458
+forward
+num2
+485
+467
+tagumine otse: 235
+tagumine otse: 393
+-6.654229007633589
+173.3457709923664
+forward
+num2
+483
+470
+tagumine otse: 235
+tagumine otse: 393
+-7.010259541984734
+172.98974045801526
+forward
+num2
+479
+469
+tagumine otse: 235
+tagumine otse: 393
+-7.230793893129772
+172.76920610687023
+forward
+num2
+478
+471
+tagumine otse: 235
+tagumine otse: 394
+-7.230793893129772
+172.76920610687023
+forward
+476
+471
+tagumine otse: 235
+tagumine otse: 394
+-7.442793893129772
+172.55720610687024
+forward
+477
+471
+tagumine otse: 235
+tagumine otse: 394
+-6.93302290076336
+173.06697709923665
+forward
+num2
+482
+474
+tagumine otse: 236
+tagumine otse: 395
+-4.810175572519086
+175.18982442748091
+forward
+num2
+485
+475
+tagumine otse: 237
+tagumine otse: 394
+-4.810175572519086
+175.18982442748091
+forward
+num2
+485
+475
+tagumine otse: 237
+tagumine otse: 394
+-2.954419847328246
+177.04558015267176
+forward
+num2
+485
+472
+tagumine otse: 237
+tagumine otse: 394
+-2.026541984732826
+177.97345801526717
+forward
+num2
+483
+472
+tagumine otse: 238
+tagumine otse: 394
+-1.0619618320610702
+178.93803816793894
+forward
+num2
+482
+471
+tagumine otse: 238
+tagumine otse: 394
+-1.0619618320610702
+178.93803816793894
+forward
+num2
+484
+470
+tagumine otse: 238
+tagumine otse: 394
+-0.5433969465648869
+179.45660305343512
+forward
+num2
+485
+469
+tagumine otse: 238
+tagumine otse: 395
+-0.5433969465648869
+179.45660305343512
+forward
+num2
+485
+468
+tagumine otse: 239
+tagumine otse: 395
+-0.5433969465648869
+179.45660305343512
+forward
+num2
+484
+467
+tagumine otse: 239
+tagumine otse: 395
+-0.5433969465648869
+179.45660305343512
+forward
+num2
+481
+467
+tagumine otse: 239
+tagumine otse: 394
+-0.8341755725190854
+179.1658244274809
+forward
+num2
+480
+466
+tagumine otse: 239
+tagumine otse: 395
+-1.3115801526717572
+178.68841984732825
+forward
+477
+466
+tagumine otse: 239
+tagumine otse: 396
+-1.6129770992366428
+178.38702290076336
+forward
+475
+467
+tagumine otse: 240
+tagumine otse: 395
+-0.6863206106870244
+179.31367938931297
+forward
+num2
+478
+466
+tagumine otse: 240
+tagumine otse: 395
+-0.6863206106870244
+179.31367938931297
+forward
+num2
+479
+466
+tagumine otse: 240
+tagumine otse: 394
+0.9750381679389296
+0.9750381679389296
+forward
+num2
+479
+465
+tagumine otse: 240
+tagumine otse: 394
+2.600641221374044
+2.600641221374044
+forward
+num2
+478
+465
+tagumine otse: 240
+tagumine otse: 394
+2.600641221374044
+2.600641221374044
+forward
+num2
+479
+463
+tagumine otse: 241
+tagumine otse: 394
+2.600641221374044
+2.600641221374044
+forward
+num2
+480
+462
+tagumine otse: 241
+tagumine otse: 394
+2.250236641221372
+2.250236641221372
+forward
+num2
+480
+463
+tagumine otse: 242
+tagumine otse: 394
+2.250236641221372
+2.250236641221372
+forward
+num2
+480
+462
+tagumine otse: 242
+tagumine otse: 395
+1.9977786259541965
+1.9977786259541965
+forward
+num2
+481
+463
+tagumine otse: 243
+tagumine otse: 394
+1.9977786259541965
+1.9977786259541965
+forward
+num2
+480
+461
+tagumine otse: 243
+tagumine otse: 395
+2.346549618320609
+2.346549618320609
+forward
+num2
+481
+461
+tagumine otse: 243
+tagumine otse: 395
+2.2338320610687004
+2.2338320610687004
+forward
+num2
+478
+461
+tagumine otse: 243
+tagumine otse: 395
+2.55564885496183
+2.55564885496183
+forward
+num2
+478
+462
+tagumine otse: 244
+tagumine otse: 396
+2.55564885496183
+2.55564885496183
+forward
+475
+461
+tagumine otse: 244
+tagumine otse: 396
+2.0609923664122114
+2.0609923664122114
+forward
+476
+463
+tagumine otse: 244
+tagumine otse: 396
+1.309541984732822
+1.309541984732822
+forward
+477
+461
+tagumine otse: 245
+tagumine otse: 397
+1.6101221374045778
+1.6101221374045778
+forward
+num2
+479
+461
+tagumine otse: 245
+tagumine otse: 398
+1.4712671755725166
+1.4712671755725166
+forward
+num2
+479
+460
+tagumine otse: 246
+tagumine otse: 398
+1.4712671755725166
+1.4712671755725166
+forward
+num2
+479
+459
+tagumine otse: 247
+tagumine otse: 399
+0.8821984732824402
+0.8821984732824402
+forward
+num2
+479
+458
+tagumine otse: 247
+tagumine otse: 399
+1.0047175572519058
+1.0047175572519058
+forward
+num2
+480
+457
+tagumine otse: 248
+tagumine otse: 400
+0.615106870229005
+0.615106870229005
+forward
+476
+452
+tagumine otse: 248
+tagumine otse: 400
+0.615106870229005
+0.615106870229005
+forward
+475
+444
+tagumine otse: 249
+tagumine otse: 400
+0.615106870229005
+0.615106870229005
+forward
+476
+436
+tagumine otse: 249
+tagumine otse: 401
+0.4631832061068676
+0.4631832061068676
+forward
+475
+429
+tagumine otse: 250
+tagumine otse: 401
+0.5756564885496157
+0.5756564885496157
+forward
+476
+420
+tagumine otse: 250
+tagumine otse: 401
+0.5756564885496157
+0.5756564885496157
+forward
+475
+409
+tagumine otse: 251
+tagumine otse: 403
+0.06270992366411954
+0.06270992366411954
+forward
+476
+398
+tagumine otse: 251
+tagumine otse: 403
+0.3191832061068676
+0.3191832061068676
+forward
+476
+386
+tagumine otse: 252
+tagumine otse: 404
+0.06352671755724931
+0.06352671755724931
+forward
+num2
+479
+372
+tagumine otse: 253
+tagumine otse: 404
+0.06352671755724931
+0.06352671755724931
+forward
+num2
+480
+361
+tagumine otse: 254
+tagumine otse: 405
+-0.21677862595420105
+179.7832213740458
+forward
+num2
+479
+352
+tagumine otse: 254
+tagumine otse: 406
+0.22429007633587533
+0.22429007633587533
+forward
+num2
+478
+348
+tagumine otse: 255
+tagumine otse: 406
+-0.22412977099236892
+179.77587022900764
+forward
+476
+344
+tagumine otse: 256
+tagumine otse: 407
+-0.22412977099236892
+179.77587022900764
+forward
+476
+342
+tagumine otse: 257
+tagumine otse: 408
+-0.6815343511450407
+179.31846564885495
+forward
+477
+341
+tagumine otse: 258
+tagumine otse: 409
+1.4862366412213714
+1.4862366412213714
+forward
+477
+340
+tagumine otse: 259
+tagumine otse: 409
+3.1426946564885467
+3.1426946564885467
+forward
+477
+340
+tagumine otse: 259
+tagumine otse: 410
+3.1426946564885467
+3.1426946564885467
+forward
+476
+341
+tagumine otse: 259
+tagumine otse: 410
+2.2539618320610657
+2.2539618320610657
+forward
+476
+340
+tagumine otse: 260
+tagumine otse: 410
+0.20759541984732532
+0.20759541984732532
+forward
+475
+341
+tagumine otse: 259
+tagumine otse: 410
+-0.2506259541984762
+179.74937404580152
+forward
+475
+340
+tagumine otse: 260
+tagumine otse: 411
+0.6249770992366382
+0.6249770992366382
+forward
+476
+341
+tagumine otse: 261
+tagumine otse: 411
+0.6249770992366382
+0.6249770992366382
+forward
+num2
+478
+340
+tagumine otse: 261
+tagumine otse: 412
+1.4507557251908367
+1.4507557251908367
+forward
+num2
+479
+340
+tagumine otse: 263
+tagumine otse: 413
+1.9971908396946536
+1.9971908396946536
+forward
+num2
+480
+341
+tagumine otse: 264
+tagumine otse: 416
+1.9971908396946536
+1.9971908396946536
+forward
+num2
+482
+341
+tagumine otse: 265
+tagumine otse: 416
+1.9971908396946536
+1.9971908396946536
+forward
+num2
+483
+340
+tagumine otse: 266
+tagumine otse: 417
+1.6171297709923635
+1.6171297709923635
+forward
+num2
+486
+341
+tagumine otse: 268
+tagumine otse: 418
+1.3312519083969439
+1.3312519083969439
+forward
+num2
+486
+341
+tagumine otse: 270
+tagumine otse: 420
+1.3312519083969439
+1.3312519083969439
+forward
+num2
+486
+341
+tagumine otse: 270
+tagumine otse: 421
+1.3312519083969439
+1.3312519083969439
+forward
+num2
+486
+341
+tagumine otse: 272
+tagumine otse: 423
+0.5018778625954172
+0.5018778625954172
+forward
+num2
+484
+342
+tagumine otse: 274
+tagumine otse: 424
+0.1806412213740432
+0.1806412213740432
+forward
+num2
+485
+342
+tagumine otse: 276
+tagumine otse: 426
+-0.2171374045801553
+179.78286259541986
+forward
+num2
+482
+343
+tagumine otse: 278
+tagumine otse: 427
+-0.2171374045801553
+179.78286259541986
+forward
+num2
+483
+343
+tagumine otse: 280
+tagumine otse: 430
+-0.2171374045801553
+179.78286259541986
+forward
+num2
+484
+343
+tagumine otse: 282
+tagumine otse: 432
+-0.6222671755725218
+179.37773282442748
+forward
+num2
+486
+343
+tagumine otse: 285
+tagumine otse: 434
+-0.6222671755725218
+179.37773282442748
+forward
+num2
+489
+343
+tagumine otse: 288
+tagumine otse: 436
+-0.9116412213740486
+179.08835877862595
+forward
+num2
+490
+344
+tagumine otse: 290
+tagumine otse: 438
+-0.9116412213740486
+179.08835877862595
+forward
+num2
+491
+343
+tagumine otse: 293
+tagumine otse: 441
+-1.7382366412213768
+178.26176335877864
+forward
+num2
+490
+344
+tagumine otse: 296
+tagumine otse: 443
+-1.926770992366415
+178.07322900763359
+forward
+num2
+488
+344
+tagumine otse: 300
+tagumine otse: 447
+-1.8080534351145066
+178.19194656488548
+forward
+num2
+487
+345
+tagumine otse: 303
+tagumine otse: 451
+-1.8080534351145066
+178.19194656488548
+forward
+num2
+487
+346
+tagumine otse: 307
+tagumine otse: 454
+-2.1429389312977127
+177.85706106870228
+forward
+num2
+486
+346
+tagumine otse: 310
+tagumine otse: 457
+-2.744916030534354
+177.25508396946566
+forward
+num2
+486
+346
+tagumine otse: 316
+tagumine otse: 462
+-2.744916030534354
+177.25508396946566
+forward
+num2
+487
+347
+tagumine otse: 320
+tagumine otse: 467
+-2.744916030534354
+177.25508396946566
+forward
+num2
+488
+347
+tagumine otse: 325
+tagumine otse: 472
+-3.062320610687026
+176.93767938931296
+forward
+num2
+489
+347
+tagumine otse: 331
+tagumine otse: 478
+-3.233847328244278
+176.76615267175572
+forward
+num2
+489
+348
+tagumine otse: 338
+tagumine otse: 483
+-3.034793893129774
+176.96520610687023
+forward
+num2
+489
+348
+tagumine otse: 345
+tagumine otse: 490
+-3.2953129770992398
+176.70468702290077
+forward
+num2
+489
+350
+tagumine otse: 354
+tagumine otse: 497
+-3.2953129770992398
+176.70468702290077
+forward
+num2
+488
+349
+tagumine otse: 364
+tagumine otse: 507
+-3.6621832061068735
+176.33781679389313
+forward
+num2
+488
+350
+tagumine otse: 375
+tagumine otse: 515
+-3.6621832061068735
+176.33781679389313
+forward
+num2
+489
+351
+tagumine otse: 386
+tagumine otse: 528
+-3.973381679389316
+176.02661832061068
+forward
+num2
+491
+352
+tagumine otse: 401
+tagumine otse: 540
+-3.973381679389316
+176.02661832061068
+forward
+num2
+494
+354
+tagumine otse: 417
+tagumine otse: 554
+-4.386916030534354
+175.61308396946563
+forward
+num2
+498
+354
+tagumine otse: 437
+tagumine otse: 568
+-4.386916030534354
+175.61308396946563
+forward
+num2
+500
+355
+tagumine otse: 458
+tagumine otse: 587
+-4.386916030534354
+175.61308396946563
+forward
+num2
+499
+357
+tagumine otse: 484
+tagumine otse: 609
+-4.703832061068705
+175.2961679389313
+forward
+num2
+501
+359
+tagumine otse: 516
+tagumine otse: 634
+-4.703832061068705
+175.2961679389313
+forward
+num2
+502
+360
+tagumine otse: 552
+tagumine otse: 662
+-4.852488549618323
+175.14751145038167
+forward
+num2
+503
+363
+tagumine otse: 597
+tagumine otse: 695
+-4.420404580152675
+175.57959541984732
+forward
+num2
+504
+365
+tagumine otse: 652
+tagumine otse: 733
+-4.726702290076339
+175.27329770992367
+forward
+num2
+506
+369
+tagumine otse: 721
+tagumine otse: 760
+-4.726702290076339
+175.27329770992367
+forward
+num2
+507
+373
+tagumine otse: 768
+tagumine otse: 780
+-5.0853282442748124
+174.91467175572518
+forward
+num2
+511
+378
+tagumine otse: 802
+tagumine otse: 799
+-5.4235572519084005
+174.5764427480916
+forward
+num2
+517
+383
+tagumine otse: 833
+tagumine otse: 817
+-5.630206106870233
+174.36979389312978
+forward
+num2
+523
+389
+tagumine otse: 863
+tagumine otse: 836
+-5.630206106870233
+174.36979389312978
+forward
+num2
+530
+397
+tagumine otse: 888
+tagumine otse: 855
+-5.8140534351145075
+174.18594656488548
+forward
+num2
+537
+405
+tagumine otse: 903
+tagumine otse: 875
+-6.182427480916034
+173.81757251908397
+forward
+num2
+551
+414
+tagumine otse: 910
+tagumine otse: 892
+-6.182427480916034
+173.81757251908397
+forward
+num2
+579
+430
+tagumine otse: 914
+tagumine otse: 901
+-6.6350381679389345
+173.36496183206106
+forward
+num2
+591
+455
+tagumine otse: 913
+tagumine otse: 904
+-6.6350381679389345
+173.36496183206106
+forward
+num2
+592
+493
+tagumine otse: 913
+tagumine otse: 907
+-4.4313282442748125
+175.56867175572518
+forward
+num2
+592
+528
+tagumine otse: 914
+tagumine otse: 908
+-2.535549618320614
+177.4644503816794
+forward
+num2
+591
+530
+tagumine otse: 912
+tagumine otse: 908
+-2.292961832061072
+177.70703816793892
+forward
+num2
+591
+528
+tagumine otse: 914
+tagumine otse: 907
+-2.292961832061072
+177.70703816793892
+forward
+num2
+592
+527
+tagumine otse: 913
+tagumine otse: 907
+-2.292961832061072
+177.70703816793892
+forward
+num2
+592
+527
+tagumine otse: 914
+tagumine otse: 907
+-2.1916793893129807
+177.80832061068702
+forward
+num2
+592
+528
+tagumine otse: 913
+tagumine otse: 907
+-2.351770992366416
+177.64822900763357
+forward
+num2
+592
+529
+tagumine otse: 914
+tagumine otse: 907
+-2.2439541984732863
+177.7560458015267
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 908
+-2.2439541984732863
+177.7560458015267
+forward
+num2
+591
+527
+tagumine otse: 912
+tagumine otse: 908
+-2.5829236641221414
+177.41707633587785
+forward
+num2
+591
+527
+tagumine otse: 913
+tagumine otse: 907
+-2.851648854961836
+177.14835114503816
+forward
+num2
+589
+527
+tagumine otse: 913
+tagumine otse: 907
+-2.851648854961836
+177.14835114503816
+forward
+num2
+588
+527
+tagumine otse: 912
+tagumine otse: 907
+-2.851648854961836
+177.14835114503816
+forward
+num2
+586
+526
+tagumine otse: 913
+tagumine otse: 908
+-2.851648854961836
+177.14835114503816
+forward
+num2
+587
+526
+tagumine otse: 913
+tagumine otse: 908
+-2.851648854961836
+177.14835114503816
+forward
+num2
+587
+527
+tagumine otse: 913
+tagumine otse: 908
+-2.851648854961836
+177.14835114503816
+forward
+num2
+589
+529
+tagumine otse: 913
+tagumine otse: 907
+-2.851648854961836
+177.14835114503816
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 907
+-2.6752213740458055
+177.3247786259542
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 908
+-2.9025954198473323
+177.09740458015267
+forward
+num2
+590
+527
+tagumine otse: 912
+tagumine otse: 907
+-3.074938931297714
+176.9250610687023
+forward
+num2
+591
+528
+tagumine otse: 914
+tagumine otse: 907
+-3.074938931297714
+176.9250610687023
+forward
+num2
+590
+528
+tagumine otse: 912
+tagumine otse: 907
+-3.074938931297714
+176.9250610687023
+forward
+num2
+592
+527
+tagumine otse: 913
+tagumine otse: 908
+-3.2291068702290118
+176.770893129771
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 907
+-3.3949160305343553
+176.60508396946565
+forward
+num2
+591
+529
+tagumine otse: 912
+tagumine otse: 907
+-3.683786259541989
+176.316213740458
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 907
+-3.683786259541989
+176.316213740458
+forward
+num2
+591
+527
+tagumine otse: 913
+tagumine otse: 908
+-3.683786259541989
+176.316213740458
+forward
+num2
+592
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.683786259541989
+176.316213740458
+forward
+num2
+592
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.885534351145042
+176.11446564885495
+forward
+num2
+592
+529
+tagumine otse: 912
+tagumine otse: 907
+-4.025206106870233
+175.97479389312977
+forward
+num2
+591
+528
+tagumine otse: 912
+tagumine otse: 907
+-4.025206106870233
+175.97479389312977
+forward
+num2
+591
+528
+tagumine otse: 912
+tagumine otse: 907
+-4.192564885496187
+175.80743511450382
+forward
+num2
+592
+528
+tagumine otse: 913
+tagumine otse: 906
+-3.868900763358783
+176.1310992366412
+forward
+num2
+592
+529
+tagumine otse: 913
+tagumine otse: 908
+-3.6891755725190882
+176.31082442748092
+forward
+num2
+591
+529
+tagumine otse: 914
+tagumine otse: 907
+-3.6891755725190882
+176.31082442748092
+forward
+num2
+588
+530
+tagumine otse: 913
+tagumine otse: 908
+-3.793725190839699
+176.2062748091603
+forward
+num2
+588
+529
+tagumine otse: 914
+tagumine otse: 907
+-3.793725190839699
+176.2062748091603
+forward
+num2
+587
+530
+tagumine otse: 913
+tagumine otse: 908
+-3.793725190839699
+176.2062748091603
+forward
+num2
+587
+526
+tagumine otse: 913
+tagumine otse: 908
+-3.793725190839699
+176.2062748091603
+forward
+num2
+588
+527
+tagumine otse: 913
+tagumine otse: 908
+-3.793725190839699
+176.2062748091603
+forward
+num2
+590
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.3812442748091645
+176.61875572519082
+forward
+num2
+591
+527
+tagumine otse: 913
+tagumine otse: 907
+-3.726755725190844
+176.27324427480914
+forward
+num2
+591
+527
+tagumine otse: 912
+tagumine otse: 907
+-3.6129847328244318
+176.38701526717557
+forward
+num2
+591
+528
+tagumine otse: 914
+tagumine otse: 907
+-3.6129847328244318
+176.38701526717557
+forward
+num2
+590
+528
+tagumine otse: 912
+tagumine otse: 907
+-3.37039694656489
+176.62960305343512
+forward
+num2
+590
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.1702824427480962
+176.8297175572519
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 907
+-3.1702824427480962
+176.8297175572519
+forward
+num2
+592
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.1702824427480962
+176.8297175572519
+forward
+num2
+591
+527
+tagumine otse: 914
+tagumine otse: 907
+-3.1702824427480962
+176.8297175572519
+forward
+num2
+590
+528
+tagumine otse: 913
+tagumine otse: 907
+-3.1702824427480962
+176.8297175572519
+forward
+num2
+591
+527
+tagumine otse: 913
+tagumine otse: 908
+-3.54845801526718
+176.4515419847328
+forward
+num2
+592
+529
+tagumine otse: 912
+tagumine otse: 907
+-3.54845801526718
+176.4515419847328
+forward
+num2
+592
+529
+tagumine otse: 912
+tagumine otse: 907
+-3.54845801526718
+176.4515419847328
+forward
+num2
+591
+528
+tagumine otse: 912
+tagumine otse: 908
+-3.7085496183206152
+176.2914503816794
+forward
+num2
+591
+528
+tagumine otse: 912
+tagumine otse: 908
+-3.7085496183206152
+176.2914503816794
+forward
+num2
+591
+528
+tagumine otse: 912
+tagumine otse: 907
+-3.7085496183206152
+176.2914503816794
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 906
+-3.7085496183206152
+176.2914503816794
+forward
+num2
+591
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.7085496183206152
+176.2914503816794
+forward
+num2
+588
+529
+tagumine otse: 913
+tagumine otse: 908
+-3.848221374045806
+176.1517786259542
+forward
+num2
+589
+529
+tagumine otse: 912
+tagumine otse: 907
+-3.848221374045806
+176.1517786259542
+forward
+num2
+587
+528
+tagumine otse: 913
+tagumine otse: 908
+-3.848221374045806
+176.1517786259542
+forward
+num2
+586
+528
+tagumine otse: 913
+tagumine otse: 907
+-3.9949694656488592
+176.00503053435114
+forward
+num2
