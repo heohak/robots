@@ -1,6 +1,4 @@
-"""EX06 - Object Detection."""
-import statistics
-
+"""Maze - Bronze."""
 import PiBot
 
 
@@ -10,181 +8,87 @@ class Robot:
     def __init__(self):
         """Class constructor."""
         self.robot = PiBot.PiBot()
-
         self.shutdown = False
 
-        self.left_wheel_speed = 0
-        self.right_wheel_speed = 0
+        self.right_enc = 0
+        self.left_enc = 0
+        self.right_motor = 0
+        self.left_motor = 0
 
-        self.left_rear_str = 0
-        self.right_rear_str = 0
+        self.ir_values = []
+        self.left_forward = 0
+        self.left_diag = 0
+        self.left_lateral = 0
+        self.right_lateral = 0
+        self.right_diag = 0
+        self.right_forward = 0
 
-        self.right_register = 0
-
-        self.left_rear_str_previous = 0
-        self.right_rear_str_previous = 0
-
-        self.left_rear_side_begin = 0
-        self.right_rear_side_begin = 0
-
-        self.rotation = 0
-        self.rotation_previous = 0
-
-        self.last_turn = "left"
-
-        self.is_first = True
-
-        self.turning = None
-        self.state = "forward"
-
-        self.left_rear_side = 0
-        self.right_rear_side = 0
-        self.left_side_previous = 0
-        self.right_side_previous = 0
-
-        self.medians_list_l = []
-        self.data_l = []
-
-        self.medians_list_r = []
-        self.data_r = []
+        self.state = "search"
+        self.last_turn = ''
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set Robot reference."""
         self.robot = robot
 
-    def get_right_laser(self):
-        """
-        Return the filtered value.
-
-        Returns:
-          None if filter is empty, filtered value otherwise.
-        """
-        if self.right_rear_side:
-            if len(self.data_r) < 7:
-                self.data_r.append(self.right_rear_side)
-            else:
-                self.data_r.pop(0)
-                self.data_r.append(self.right_rear_side)
-
-    def get_left_laser(self):
-        """
-        Return the filtered value.
-
-        Returns:
-          None if filter is empty, filtered value otherwise.
-        """
-        if self.left_rear_side:
-            if len(self.data_l) < 7:
-                self.data_l.append(self.left_rear_side)
-            else:
-                self.data_l.pop(0)
-                self.data_l.append(self.left_rear_side)
-
     def sense(self):
-        """Sense method according to the SPA architecture."""
-        self.left_rear_side = self.robot.get_rear_left_side_ir()
-        self.right_rear_side = self.robot.get_rear_right_side_ir()
-        self.left_rear_str = self.robot.get_rear_left_straight_ir()
-        self.right_rear_str = self.robot.get_rear_right_straight_ir()
-        self.rotation = self.robot.get_rotation()
+        """Sense block."""
+        print('sense')
+        self.left_enc = self.robot.get_left_wheel_encoder()
+        self.right_enc = self.robot.get_right_wheel_encoder()
 
-        self.get_right_laser()
-        self.get_left_laser()
-        if self.is_first:
-            self.right_side_previous = self.right_rear_side
-            self.left_side_previous = self.left_rear_side
-            self.left_rear_side_begin = self.left_rear_side
-            self.right_rear_side_begin = self.right_rear_side
-            self.is_first = False
+        self.ir_values = self.robot.get_rear_irs()
+        self.left_forward = self.robot.get_rear_left_straight_ir()
+        self.left_diag = self.robot.get_rear_left_diagonal_ir()
+        self.left_lateral = self.robot.get_rear_left_side_ir()
+        self.right_forward = self.robot.get_rear_right_straight_ir()
+        self.right_diag = self.robot.get_rear_right_diagonal_ir()
+        self.right_lateral = self.robot.get_rear_right_side_ir()
 
     def plan(self):
-        """Plan robot."""
-        if self.state == "forward":
-            self.left_wheel_speed = -10
-            self.right_wheel_speed = -10
-            if abs(self.left_rear_side - self.left_rear_side_begin) > 30 and self.left_rear_side > self.right_rear_side:
-                print("num1")
-                self.left_wheel_speed = -10
-                self.right_wheel_speed = -9
-            elif abs(self.right_rear_side - self.right_rear_side_begin) > 30 and self.right_rear_side > self.left_rear_side:
-                print("num2")
-                self.left_wheel_speed = -9
-                self.right_wheel_speed = -10
-            else:
-                if self.last_turn == "left":
-                    if self.rotation > 3:
-                        self.left_wheel_speed = 8
-                        self.right_wheel_speed = -8
-                    elif self.rotation < 0:
-                        self.left_wheel_speed = -8
-                        self.right_wheel_speed = 8
-                elif self.last_turn == "right":
-                    if self.rotation > -177:
-                        self.left_wheel_speed = 8
-                        self.right_wheel_speed = -8
-                    elif self.rotation < -180:
-                        self.left_wheel_speed = -8
-                        self.right_wheel_speed = 8
-        self.plan2()
-
-    def plan2(self):
-        """Create plan 2."""
-        if self.state == "forward":
-            if statistics.median(self.data_r) < 300 and statistics.median(self.data_l) < 400:
-                self.left_wheel_speed = 0
-                self.right_wheel_speed = 0
-                self.shutdown = True
-            elif statistics.median(self.data_r) < 300:
-                self.left_wheel_speed = 0
-                self.right_wheel_speed = 0
-                self.left_rear_str_previous = self.left_rear_str
-                self.right_rear_str_previous = self.right_rear_str
-                self.state = "turn_left"
-            elif statistics.median(self.data_l) < 400:
-                self.left_wheel_speed = 0
-                self.right_wheel_speed = 0
-                self.left_rear_str_previous = self.left_rear_str
-                self.right_rear_str_previous = self.right_rear_str
-                self.state = "turn_right"
-            else:
-                self.right_side_previous = self.right_rear_side
-                self.left_side_previous = self.left_rear_side
-        elif self.state == "turn_left":
-            self.left_wheel_speed = -99
-            self.right_wheel_speed = -6
-            if self.rotation > 5:
-                self.left_wheel_speed = 0
-                self.right_wheel_speed = 0
-                self.data_l = []
-                self.last_turn = "left"
-                self.state = "forward"
-        elif self.state == "turn_right":
-            self.left_wheel_speed = -7
-            self.right_wheel_speed = -99
-            if self.rotation < -185:
-                self.left_wheel_speed = 0
-                self.right_wheel_speed = 0
-                self.data_r = []
-                self.last_turn = "right"
-                self.state = "forward"
+        """Plan block."""
+        print('plan')
+        if self.right_lateral > 550 and self.left_lateral > 550:
+            self.right_motor = -10
+            self.left_motor = -10
+        elif self.left_lateral > 600 and self.left_diag > 500:
+            self.right_motor = 10
+            self.left_motor = -20
+            self.last_turn = 'right'
+        elif 600 < self.right_lateral and 500 < self.right_diag:
+            self.right_motor = -20
+            self.left_motor = 10
+            self.last_turn = "left"
+        elif self.left_lateral < 500 and self.last_turn == 'right':
+            self.right_motor = -50
+            self.left_motor = 10
+        elif self.right_lateral < 500 and self.last_turn == 'left':
+            self.right_motor = 10
+            self.left_motor = -50
+        else:
+            self.right_motor = -10
+            self.left_motor = -10
 
     def act(self):
-        """Act robot."""
-        self.robot.set_left_wheel_speed(self.left_wheel_speed)
-        self.robot.set_right_wheel_speed(self.right_wheel_speed)
+        """Act block."""
+        print('act')
+        self.robot.set_right_wheel_speed(self.right_motor)
+        self.robot.set_left_wheel_speed(self.left_motor)
 
     def spin(self):
-        """Create the main loop."""
+        """Initialize the main loop."""
         while not self.shutdown:
-            print(abs(self.right_rear_side - self.right_rear_side_begin))
-            print(abs(self.left_rear_side - self.left_rear_side_begin))
-            print(self.rotation)
-            print(self.state)
+            print('running')
             self.sense()
             self.plan()
             self.act()
             self.robot.sleep(0.05)
 
 
-robot = Robot()
-robot.spin()
+def main():
+    """Initialize main entry."""
+    robot = Robot()
+    robot.spin()
+
+
+if __name__ == "__main__":
+    main()
