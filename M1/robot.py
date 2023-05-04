@@ -1,4 +1,4 @@
-"""Maze - Bronze."""
+"""M1 - Maze."""
 import PiBot
 
 
@@ -9,75 +9,69 @@ class Robot:
         """Class constructor."""
         self.robot = PiBot.PiBot()
         self.shutdown = False
-
-        self.right_enc = 0
-        self.left_enc = 0
-        self.right_motor = 0
-        self.left_motor = 0
-
-        self.ir_values = []
-        self.left_forward = 0
-        self.left_diag = 0
-        self.left_lateral = 0
-        self.right_lateral = 0
-        self.right_diag = 0
-        self.right_forward = 0
-
-        self.state = "search"
-        self.last_turn = ''
+        self.right_wheel_speed = 0
+        self.left_wheel_speed = 0
+        self.left_straight_ir = 0
+        self.left_diagonal_ir = 0
+        self.left_side_ir = 0
+        self.right_side_ir = 0
+        self.right_diagonal_ir = 0
+        self.right_straight_ir = 0
+        self.last_turn = ""
 
     def set_robot(self, robot: PiBot.PiBot()) -> None:
         """Set Robot reference."""
         self.robot = robot
 
     def sense(self):
-        """Sense block."""
-        print('sense')
-        self.left_enc = self.robot.get_left_wheel_encoder()
-        self.right_enc = self.robot.get_right_wheel_encoder()
-
-        self.ir_values = self.robot.get_rear_irs()
-        self.left_forward = self.robot.get_rear_left_straight_ir()
-        self.left_diag = self.robot.get_rear_left_diagonal_ir()
-        self.left_lateral = self.robot.get_rear_left_side_ir()
-        self.right_forward = self.robot.get_rear_right_straight_ir()
-        self.right_diag = self.robot.get_rear_right_diagonal_ir()
-        self.right_lateral = self.robot.get_rear_right_side_ir()
+        """Sense method according to the SPA architecture."""
+        self.left_straight_ir = self.robot.get_rear_left_straight_ir()
+        self.left_diagonal_ir = self.robot.get_rear_left_diagonal_ir()
+        self.left_side_ir = self.robot.get_rear_left_side_ir()
+        self.right_straight_ir = self.robot.get_rear_right_straight_ir()
+        self.right_diagonal_ir = self.robot.get_rear_right_diagonal_ir()
+        self.right_side_ir = self.robot.get_rear_right_side_ir()
 
     def plan(self):
-        """Plan block."""
-        print('plan')
-        if self.right_lateral > 550 and self.left_lateral > 550:
-            self.right_motor = -10
-            self.left_motor = -10
-        elif self.left_lateral > 600 and self.left_diag > 500:
-            self.right_motor = 10
-            self.left_motor = -20
-            self.last_turn = 'right'
-        elif 600 < self.right_lateral and 500 < self.right_diag:
-            self.right_motor = -20
-            self.left_motor = 10
+        """Plan action."""
+        if self.right_side_ir > 550 and self.left_side_ir > 550:
+            self.right_wheel_speed = -10
+            self.left_wheel_speed = -10
+        elif self.left_side_ir > 600 and self.left_diagonal_ir > 500:
+            self.right_wheel_speed = 10
+            self.left_wheel_speed = -20
+            self.last_turn = "right"
+        elif 600 < self.right_side_ir and 500 < self.right_diagonal_ir:
+            self.right_wheel_speed = -20
+            self.left_wheel_speed = 10
             self.last_turn = "left"
-        elif self.left_lateral < 500 and self.last_turn == 'right':
-            self.right_motor = -50
-            self.left_motor = 10
-        elif self.right_lateral < 500 and self.last_turn == 'left':
-            self.right_motor = 10
-            self.left_motor = -50
+        elif self.left_side_ir < 500 and self.last_turn == "right":
+            self.right_wheel_speed = -50
+            self.left_wheel_speed = 10
+        elif self.right_side_ir < 500 and self.last_turn == "left":
+            self.right_wheel_speed = 10
+            self.left_wheel_speed = -50
+        elif self.left_straight_ir > 600 and self.right_straight_ir > 600:
+            self.right_wheel_speed = -50
+            self.left_wheel_speed = 50
         else:
-            self.right_motor = -10
-            self.left_motor = -10
+            self.right_wheel_speed = -10
+            self.left_wheel_speed = -10
+
+        if self.left_side_ir < 400 and self.left_diagonal_ir < 400 and self.left_straight_ir < 400 and\
+                self.right_straight_ir < 400 and self.right_diagonal_ir < 400 and self. right_side_ir < 400:
+            self.right_wheel_speed = 0
+            self.left_wheel_speed = 0
 
     def act(self):
-        """Act block."""
+        """Act according to plan."""
         print('act')
-        self.robot.set_right_wheel_speed(self.right_motor)
-        self.robot.set_left_wheel_speed(self.left_motor)
+        self.robot.set_right_wheel_speed(self.right_wheel_speed)
+        self.robot.set_left_wheel_speed(self.left_wheel_speed)
 
     def spin(self):
         """Initialize the main loop."""
         while not self.shutdown:
-            print('running')
             self.sense()
             self.plan()
             self.act()
