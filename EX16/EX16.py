@@ -415,7 +415,7 @@ class Robot:
         self.current_imu_odometry[2] = self.last_imu_odometry[2] + next_rot
 
     def spin(self):
-        """Initialize spin."""
+        """Initialize spi n."""
         for _ in range(10):
             self.sense()
             self.update_pose()
